@@ -18,11 +18,20 @@ const Navbar = () => {
                     <li><Link to="/about">About Us</Link></li>
                     <li><Link to="/services">Services</Link></li>
                     <li><Link to="/programs">Programs</Link></li>
+                    <li><Link to="/">More</Link>
+                        <ul>
+                            <li><Link to="/donate">Prayer Times</Link></li>
+                            <li><Link to="/contact">Contact Us</Link></li>
+                        </ul>
+                    </li>
                     <li><Link to="/donate" className="active">
                         Donate</Link>
                     </li>
                 </ul>
             </div>
+
+            {/* Hambargur Menu */}
+            
         </nav>
 
         </>

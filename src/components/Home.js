@@ -10,12 +10,13 @@ const Home = () => {
             <div className="background-text">
                 <h1>Welcome to Al Huda Mosque</h1>
                 <p>Al Huda Mosque is a non-profit organization that 
-                    serves the Muslim community in the greater 
-                    Boston area. We are located in the heart of 
-                    Cambridge, Massachusetts, close to Harvard 
-                    University and MIT.</p>
+                    serves the Muslim community in Kent, Washington.</p>
             </div>
         </div>
+
+        <section className="services">
+
+        </section>
         
         </>
 

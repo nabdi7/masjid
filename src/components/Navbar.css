@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:wght@100&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+  
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat";
+}
+
+.Navbar {
+    background-color: #fff;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.brand-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand-logo .logo{
+    width: fit-content;
+    height: fit-content;
+    margin: 0.5rem;
+    font-weight: 500;
+    color: #000;
+}
+
+.navbar-links ul{
+    margin: 0; /* it moves up */
+    width: 100%;
+    padding: 0; /* gets it closer to each other */
+    display: flex; /* lines them horizontally */
+    text-align: center; /* makes text center */
+}
+
+.navbar-links li {
+    text-decoration: none; 
+    color: #000;
+    padding: 1rem; /* it moves up */
+    display: block; 
+    position: relative;
+}
+
+.navbar-links li ul{
+    background-color: #fff;
+    max-height: 240px;
+    width: 100%;
+    margin: 0 auto; 
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 2px;
+    display: none;
+    position: absolute; 
+    top: 100%;
+    left: 0;
+}
+
+.navbar-links li:hover ul {
+    display: block;
+}
+
+.navbar-links a{
+    display: inline-block;
+    padding: 1rem;
+    color: #000;
+    text-decoration: none;
+}
+
+li a.active {
+    color: white;
+}
+
+.active {
+    background-color: #038000;
+    color: black;
+    border-radius: 1311.188px;
+    box-shadow: 0px 6.5625px 21px 0px;
+}
+
+.navbar-links li a:hover{
+    color: black;
+}
+
