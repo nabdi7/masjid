@@ -1,0 +1,15 @@
+.background-image {
+    background-image: url("../images/main.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 60vh;
+    background-position: center;
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: flex-start;
+    color: white;
+    padding-left: 4rem;
+}

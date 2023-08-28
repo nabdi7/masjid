@@ -6,7 +6,7 @@ const Home = () => {
     return (
         <>
         <div className="background-image">
-            <img src={logo} className="main-image" alt="logo" />
+            {/* <img src={logo} className="main-image" alt="logo" /> */}
             <div className="background-text">
                 <h1>Welcome to Al Huda Mosque</h1>
                 <p>Al Huda Mosque is a non-profit organization that 
