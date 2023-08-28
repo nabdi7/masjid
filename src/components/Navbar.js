@@ -31,6 +31,9 @@ const Navbar = () => {
             </div>
 
             {/* Hambargur Menu */}
+            <div className="hamburger-menu">
+                <div className="bar"></div>
+            </div>
             
         </nav>
 
