@@ -5,6 +5,8 @@ import logo from "../images/main.jpg";
 const Home = () => {
     return (
         <>
+        {/* sliding show background */}
+        
         <div className="background-image">
             {/* <img src={logo} className="main-image" alt="logo" /> */}
             <div className="background-text">
@@ -14,7 +16,19 @@ const Home = () => {
             </div>
         </div>
 
+        {/* services */}
         <section className="services">
+
+        </section>
+
+        {/* prayer times */}
+        <section className="prayer">
+
+        </section>
+
+
+        {/* gallery */}
+        <section className="gallery">
 
         </section>
         

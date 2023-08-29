@@ -4,9 +4,13 @@ import "./Donate.css";
 const Donate = () => {
     return (
         <>
+        {/* donation */}
         <div className="Donate">
-            <h1>Services</h1>
+            <h1>Donation</h1>
         </div>
+        
+        {/* QR codes */}
+
         
         </>
 

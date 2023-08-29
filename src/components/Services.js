@@ -7,6 +7,8 @@ const Services = () => {
         <div className="Services">
             <h1>Services</h1>
         </div>
+
+        {/* get in touch */}
         
         </>
 
