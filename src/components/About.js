@@ -7,6 +7,9 @@ const About = () => {
         {/* about the masjid */}
         <div className="about">
             <h1>About</h1>
+
+            <p>Al Huda Mosque is a non-profit organization that 
+                serves the Muslim community in Kent, Washington.</p>
         </div>
         
         {/* board members */}
