@@ -9,7 +9,8 @@ const About = () => {
             <h1>About</h1>
 
             <p>Al Huda Mosque is a non-profit organization that 
-                serves the Muslim community in Kent, Washington.</p>
+                serves the Muslim community in Kent, Washington. 
+                opened in 2007</p>
         </div>
         
         {/* board members */}
