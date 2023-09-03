@@ -7,10 +7,50 @@
     padding-top: 4rem;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    text-align: flex-start;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     color: white;
     padding-left: 4rem;
 }
 
+.subheading, .description {
+    color: white;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.title {
+    font-family: Montserrat;
+    font-size: 59px;
+}
+
+.button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid #038000;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    justify-content: center;
+    font-family: Montserrat;
+}
+
+.background-image .button.home-button {
+    background-color: #038000;
+    color: white;
+}
+  
+.background-image .button.home-button:hover {
+    background-color: #038000;
+    color: white;
+}
+  
+.background-image .button:active {
+    transform: scale(0.95);
+}
+  

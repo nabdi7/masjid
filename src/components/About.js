@@ -5,7 +5,7 @@ const About = () => {
     return (
         <>
         {/* about the masjid */}
-        <div className="about">
+        <div className='about'>
             <h1>About</h1>
 
             <p>Al Huda Mosque is a non-profit organization that 
