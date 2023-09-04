@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:wght@100&display=swap');
+
+.footer {
+    background-color: #fff;
+    color: #000;
+    padding: 1rem 0;
+}
+.footer-container {
+    padding: 0 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container .footer-logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer-menu {
+    text-align: left;
+}
+
+.menu-title {
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 22px;
+    text-align: center;
+    display: inline-block;
+}
+
+.footer-menu ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-menu ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.get-in-touch {
+    text-align: center;
+    display: inline-block; /* Display "Get in touch" on the same line */
+    margin-top: 10px; /* Add some top margin for spacing */
+}
+
+.socials {
+    text-align: center;
+    margin-top: 10px; /* Add some top margin for spacing */
+}
+
+.socials a {
+    /* color: blue; */
+    margin: 0 10px; /* Add some horizontal spacing between social icons */
+    font-size: 22px; /* Adjust the font size as needed */
+}
+
+.socials a:hover {
+    color: blue; 
+}
+
+.line {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Add a barely visible underline */
+    margin-top: 10px; /* Add some top margin for spacing */
+    width: 100%; 
+    height: 1px; /* Adjust the thickness of the line */
+    background-color: rgba(0, 0, 0, 0.1); /* Match the color to the border color */
+}
+@media screen and (max-width: 768px) {
+    .footer-container {
+      align-items: center;
+    }
+    
+    .socials {
+      margin-bottom: 1rem;
+    }
+    
+    .get-in-touch {
+        align-items: center;
+    }
+}
