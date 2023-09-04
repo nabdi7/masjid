@@ -16,7 +16,11 @@ const Home = () => {
         event.preventDefault();
         navigate('/services');
         window.scrollTo(0, 0);
-      };
+    };
+    const scrollToServices = (event) => {
+        navigate('/services');
+        window.scrollTo(0, 0);
+    };
     return (
         <>
         {/* sliding show background */}
@@ -42,6 +46,7 @@ const Home = () => {
                     <h1 className='services-box-title'>Quran Program</h1>
                     <p className='services-box-description'>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                         Quisquam, voluptate.</p>
+                    <Link to="/services" className='button learn-more' onClick={scrollToServices}>Learn More</Link>
                 </div>
                 <div className='services-box'>
                     <div className='icons'>
@@ -49,7 +54,9 @@ const Home = () => {
                     </div>
                     <h1 className='services-box-title'>Nikkah Services</h1>
                     <p className='services-box-description'>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Quisquam, voluptate.</p>
+                        Quisquam, voluptate.
+                    </p>
+                    <Link to="/services" className='button learn-more' onClick={scrollToServices}>Learn More</Link>
                 </div>
                 <div className='services-box'>
                     <div className='icons'>
@@ -57,7 +64,9 @@ const Home = () => {
                     </div>
                     <h1 className='services-box-title'>Halaqas</h1>
                     <p className='services-box-description'>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Quisquam, voluptate.</p>
+                        Quisquam, voluptate.
+                    </p>
+                    <Link to="/services" className='button learn-more' onClick={scrollToServices}>Learn More</Link>
                 </div>
                 <div className='services-box'>
                     <div className='icons'>
@@ -65,7 +74,9 @@ const Home = () => {
                     </div>
                     <h1 className='services-box-title'>Funeral service</h1>
                     <p className='services-box-description'>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Quisquam, voluptate.</p>
+                        Quisquam, voluptate.
+                    </p>
+                    <Link to="/services" className='button learn-more' onClick={scrollToServices}>Learn More</Link>
                 </div>
             </div>
         </section>

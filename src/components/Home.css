@@ -85,7 +85,7 @@
 .services-box {
     width: 50%;
     padding: 2rem;
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
     border-radius: 10px;
     margin-bottom: 2rem;
     transition: all 0.3s ease;
@@ -134,12 +134,12 @@
     margin-top: 2rem;
 }
 .gallery-box {
-    flex: 0 0 calc(50% - 1rem); /* Set the maximum width for each image to 50% with spacing in between */
-    margin-bottom: 2rem; /* Add some vertical spacing between rows */
+    flex: 0 0 calc(50% - 1rem); 
+    margin-bottom: 2rem; 
     box-sizing: border-box;
 }
 
-/* Additional styles for images to ensure they fit within the boxes */
+
 .gallery-box img {
     max-width: 50%; 
     height: auto;

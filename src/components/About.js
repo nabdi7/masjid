@@ -19,33 +19,55 @@ const About = () => {
                     </p>
                 </div>
             </div>
+        </section>
 
-            <div className='board'>
-                <div className='board-members'>
-                    <h1 className='board-members-title'>Board Members</h1>
-                    <div className='board-members-container'>
-                        <div className='board-members-box'>
-                            <h1 className='board-members-box-title'>President</h1>
-                            <p className='board-members-name'>Sheikh Ahmed Nuur</p>
-                        </div>
-                        <div className='board-members-box'>
-                            <h1 className='board-members-box-title'>Vice President</h1>
-                            <p className='board-members-name'>Najib Abdi </p>
-                        </div>
-                        <div className='board-members-box'>
-                            <h1 className='board-members-box-title'>Secretary</h1>
-                            <p className='board-members-name'>Najib Abdi </p>
-                        </div>
-                        <div className='board-members-box'>
-                            <h1 className='board-members-box-title'>Treasurer</h1>
-                            <p className='board-members-name'>Najib Abdi</p>
-                        </div>
+        <section className="board">
+            <h2 className='board-title'>Board Members</h2>
+            <div className="board-members">
+                {/* Team Member 1 */}
+                <div className="board-member">
+                    <div className="board-member__body">
+                    <h3 className="board-member__title">Sheikh Ahmed Nuur</h3>
+                    <p className="board-member__subtitle">President</p>
+                    </div>
+                </div>
+
+                {/* Team Member 2 */}
+                <div className="board-member">
+                    <div className="board-member__body">
+                    <h3 className="board-member__title">Hamza </h3>
+                    <p className="board-member__subtitle">Vice President</p>
+                    </div>
+                </div>
+
+                {/* Team Member 3 */}
+                <div className="board-member">
+                    <div className="board-member__body">
+                    <h3 className="board-member__title">Abdifatah</h3>
+                    <p className="board-member__subtitle">Secretary</p>
+                    </div>
+                </div>
+                {/* Team Member 4 */}
+                <div className="board-member">
+                    <div className="board-member__body">
+                    <h3 className="board-member__title">Abdifatah</h3>
+                    <p className="board-member__subtitle">Treasurer</p>
+                    </div>
+                </div>
+                <div className="board-member">
+                    <div className="board-member__body">
+                    <h3 className="board-member__title">Abdifatah</h3>
+                    <p className="board-member__subtitle">Treasurer</p>
+                    </div>
+                </div>
+                <div className="board-member">
+                    <div className="board-member__body">
+                    <h3 className="board-member__title">Abdifatah</h3>
+                    <p className="board-member__subtitle">Treasurer</p>
                     </div>
                 </div>
             </div>
-
-        </section>
-        
+      </section>
         {/* board members */}
 
         
