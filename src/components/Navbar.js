@@ -20,7 +20,7 @@ const Navbar = () => {
                     <li><Link to="/programs">Programs</Link></li>
                     <li><Link to="/">More</Link>
                         <ul>
-                            <li><Link to="/donate">Prayer Times</Link></li>
+                            <li><Link to="/prayer">Prayer Times</Link></li>
                             <li><Link to="/contact">Contact Us</Link></li>
                         </ul>
                     </li>

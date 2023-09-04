@@ -7,6 +7,8 @@ import About from './components/About';
 import Services from './components/Services';
 import Programs from './components/Programs';
 import Donate from './components/Donate';
+import Prayer from './components/Prayer';
+import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 function App() {
@@ -20,6 +22,8 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/programs" element={<Programs />} />
           <Route path="/donate" element={<Donate />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/prayer" element={<Prayer />} />
         </Routes>
         <Footer /> 
       </Router>

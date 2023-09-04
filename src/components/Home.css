@@ -53,4 +53,137 @@
 .background-image .button:active {
     transform: scale(0.95);
 }
-  
+
+.services {
+    padding: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.services-title {
+    font-family: "Montserrat";
+    color: #038000;
+    font-size: 20px;
+}
+
+.services-description {
+    font-family: "Montserrat";
+    font-size: 28px;
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.services-box {
+    width: 50%;
+    padding: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    transition: all 0.3s ease;
+}
+
+.icons {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.services-box-title {
+    font-family: "Montserrat";
+    font-size: 22px;
+    margin-bottom: 1rem;
+}
+
+.services-box-description {
+    font-family: "Montserrat";
+    font-size: 16px;
+}
+
+/* .services-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+} */
+
+.gallery {
+    padding: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.gallery-title {
+    font-family: "Montserrat";
+    color: #038000;
+    font-size: 20px;
+}
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+.gallery-box {
+    flex: 0 0 calc(50% - 1rem); /* Set the maximum width for each image to 50% with spacing in between */
+    margin-bottom: 2rem; /* Add some vertical spacing between rows */
+    box-sizing: border-box;
+}
+
+/* Additional styles for images to ensure they fit within the boxes */
+.gallery-box img {
+    max-width: 50%; 
+    height: auto;
+}
+.masjid-everyone {
+    padding: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #ccc;
+}
+
+.masjid-everyone-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-top: 2rem; */
+}
+
+.masjid-everyone-title {
+    font-family: "Montserrat";
+    color: #038000;
+    font-size: 20px;
+}
+
+.masjid-everyone-description {
+    font-family: "Montserrat";
+    font-size: 22px;
+}
+
+.masjid-everyone-button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid #038000;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    justify-content: center;
+    font-family: Montserrat;
+    background-color: #038000;
+    color: white;
+}

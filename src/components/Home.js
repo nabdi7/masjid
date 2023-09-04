@@ -4,6 +4,10 @@ import "./Home.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBookQuran } from '@fortawesome/free-solid-svg-icons';
 import { faHeart as farHeart } from '@fortawesome/free-regular-svg-icons';
+import img1 from '../images/front.jpeg';
+import img2 from '../images/interior2.jpeg';
+import img3 from '../images/interior1.jpeg';
+import img4 from '../images/interior3.jpeg';
 
 const Home = () => {
     const navigate = useNavigate();
@@ -29,26 +33,36 @@ const Home = () => {
         {/* services */}
         <section className='services'>
             <h1 className='services-title'>Our Services</h1>
-            <p className='services-description'>Serving Our Community</p>
+            <h1 className='services-description'>Serving Our Community</h1>
             <div className='services-container'>
                 <div className='services-box'>
-                    <FontAwesomeIcon icon={faBookQuran} style={{ color: '#038000' }} />
+                    <div className='icons'>
+                        <FontAwesomeIcon icon={faBookQuran} style={{ color: '#038000' }} />
+                    </div>
                     <h1 className='services-box-title'>Quran Program</h1>
                     <p className='services-box-description'>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                         Quisquam, voluptate.</p>
                 </div>
                 <div className='services-box'>
-                    <FontAwesomeIcon icon={farHeart} style={{ color: '#038000' }} />
+                    <div className='icons'>
+                        <FontAwesomeIcon icon={farHeart} style={{ color: '#038000' }} />
+                    </div>
                     <h1 className='services-box-title'>Nikkah Services</h1>
                     <p className='services-box-description'>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                         Quisquam, voluptate.</p>
                 </div>
                 <div className='services-box'>
+                    <div className='icons'>
+                        <FontAwesomeIcon icon={farHeart} style={{ color: '#038000' }} />
+                    </div>
                     <h1 className='services-box-title'>Halaqas</h1>
                     <p className='services-box-description'>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                         Quisquam, voluptate.</p>
                 </div>
                 <div className='services-box'>
+                    <div className='icons'>
+                        <FontAwesomeIcon icon={farHeart} style={{ color: '#038000' }} />
+                    </div>
                     <h1 className='services-box-title'>Funeral service</h1>
                     <p className='services-box-description'>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                         Quisquam, voluptate.</p>
@@ -66,18 +80,33 @@ const Home = () => {
 
         {/* gallery */}
         <section className='gallery'>
-            {/* <h1 className='gallery-title'>Gallery</h1>
+            <h1 className='gallery-title'>Our Gallery</h1>
             <div className='gallery-container'>
                 <div className='gallery-box'>
-                    <img src='https://images.unsplash.com/photo-1581093458794-8d1f0b3b6c7c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bW9zY2lkJTIwY2FyJTIwYmVzdCUyMG1vcmUlMjBzaG9ydCUyMGNvbXBsZXRlJTIwY29tcGFueXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80' alt='gallery' />
+                    <img src={img1} alt="" />
                 </div>
                 <div className='gallery-box'>
-                    <img src='https://images.unsplash.com/photo-1581093458794-8d1f0b3b6c7c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bW9zY2lkJTIwY2FyJTIwYmVzdCUyMG1vcmUlMjBzaG9ydCUyMGNvbXBsZXRlJTIwY29tcGFueXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80' alt='gallery' />
+                    <img src={img2} alt="" />
                 </div>
                 <div className='gallery-box'>
-                    <img src='https://images.unsplash.com/photo-1581093458794-8d1f0b3b6c7c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bW9zY2lkJTIwY2FyJTIwYmVzdCUyMG1vcmUlMjBzaG9ydCUyMGNvbXBsZXRlJTIwY29tcGFueXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80' alt='gallery' />
+                    <img src={img3} alt="" />
                 </div>
-             </div> */}
+                <div className='gallery-box'>
+                    <img src={img4} alt="" />
+                </div>
+             </div>
+        </section>
+
+        {/* A masjid for everyone */}
+        <section className='masjid-everyone'>
+            <div className='masjid-everyone-container'>
+                <div className='masjid-everyone-box'>
+                    <h1 className='masjid-everyone-title'>A MASJID FOR EVERYONE</h1>
+                    <p className='masjid-everyone-description'>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quisquam, voluptate.</p>
+                    <Link to="/about" className='button masjid-everyone-button'>Volunteer</Link>
+                </div>
+            </div>
         </section>
 
         </>
