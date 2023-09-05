@@ -1,9 +1,8 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from 'react-router-dom';
 import "./Home.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBookQuran } from '@fortawesome/free-solid-svg-icons';
-import { faHeart as farHeart } from '@fortawesome/free-regular-svg-icons';
+import { faBookQuran, faPeopleGroup, faBed, faHeart } from '@fortawesome/free-solid-svg-icons';
 import img1 from '../images/front.jpeg';
 import img2 from '../images/interior2.jpeg';
 import img3 from '../images/interior1.jpeg';
@@ -21,13 +20,14 @@ const Home = () => {
         navigate('/services');
         window.scrollTo(0, 0);
     };
+    
     return (
         <>
         {/* sliding show background */}
-        
         <div className='background-image'>
             <h1 className='title'>Welcome to Al Huda Mosque</h1>
             {/* <h1>﷽</h1> */}
+            {/* <h1>"AND ALLAH INVITES TO THE HOME OF PEACE” Surah Yunus", Verse 25</h1> */}
             <p className='subheading'>In the name of Allah, the most gracious, most merciful.</p>
             <p className='description'>Al Huda Mosque is a non-profit organization that 
                 serves the Muslim community in Kent, Washington.</p>
@@ -44,37 +44,47 @@ const Home = () => {
                         <FontAwesomeIcon icon={faBookQuran} style={{ color: '#038000' }} />
                     </div>
                     <h1 className='services-box-title'>Quran Program</h1>
-                    <p className='services-box-description'>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Quisquam, voluptate.</p>
+                    <p className='services-box-description'>Explore the divine 
+                    wisdom of the Holy Quran through our structured courses, 
+                    expert guidance, and a welcoming community. Join us on a 
+                    journey of spiritual growth and connection with the Quranic 
+                    teachings.</p>
                     <Link to="/services" className='button learn-more' onClick={scrollToServices}>Learn More</Link>
                 </div>
                 <div className='services-box'>
                     <div className='icons'>
-                        <FontAwesomeIcon icon={farHeart} style={{ color: '#038000' }} />
+                        <FontAwesomeIcon icon={faHeart} style={{ color: '#038000' }} />
                     </div>
                     <h1 className='services-box-title'>Nikkah Services</h1>
-                    <p className='services-box-description'>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Quisquam, voluptate.
+                    <p className='services-box-description'>Elevate your wedding 
+                    day with our Nikkah Services, where we ensure a seamless and 
+                    blessed marriage ceremony rooted in Islamic traditions, 
+                    creating beautiful memories for couples and their families.
                     </p>
                     <Link to="/services" className='button learn-more' onClick={scrollToServices}>Learn More</Link>
                 </div>
                 <div className='services-box'>
                     <div className='icons'>
-                        <FontAwesomeIcon icon={farHeart} style={{ color: '#038000' }} />
+                        <FontAwesomeIcon icon={faPeopleGroup} style={{color: "#038000",}} />
                     </div>
                     <h1 className='services-box-title'>Halaqas</h1>
-                    <p className='services-box-description'>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Quisquam, voluptate.
+                    <p className='services-box-description'>Join our Halaqas for 
+                    spiritual growth and community connection. These engaging 
+                    sessions explore various aspects of Islamic knowledge, 
+                    fostering faith, and building lasting bonds among participants.
                     </p>
                     <Link to="/services" className='button learn-more' onClick={scrollToServices}>Learn More</Link>
                 </div>
                 <div className='services-box'>
                     <div className='icons'>
-                        <FontAwesomeIcon icon={farHeart} style={{ color: '#038000' }} />
+                        <FontAwesomeIcon icon={faBed} style={{color: "#038000",}} />
                     </div>
                     <h1 className='services-box-title'>Funeral service</h1>
-                    <p className='services-box-description'>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Quisquam, voluptate.
+                    <p className='services-box-description'>Our Funeral Services 
+                    offer compassionate support during times of loss, preserving 
+                    Islamic customs with dignity. We guide families through the 
+                    process, providing solace and respectful handling of their 
+                    loved ones.
                     </p>
                     <Link to="/services" className='button learn-more' onClick={scrollToServices}>Learn More</Link>
                 </div>
@@ -109,12 +119,13 @@ const Home = () => {
         </section>
 
         {/* A masjid for everyone */}
+        {/* todo: add a background image */}
         <section className='masjid-everyone'>
             <div className='masjid-everyone-container'>
                 <div className='masjid-everyone-box'>
                     <h1 className='masjid-everyone-title'>A MASJID FOR EVERYONE</h1>
-                    <p className='masjid-everyone-description'>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Quisquam, voluptate.</p>
+                    <p className='masjid-everyone-description'>A welcoming and 
+                    inclusive masjid for everyone, fostering community through volunteering</p>
                     <Link to="/about" className='button masjid-everyone-button'>Volunteer</Link>
                 </div>
             </div>

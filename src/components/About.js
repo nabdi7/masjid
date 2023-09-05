@@ -1,5 +1,6 @@
 import React from "react";
 import "./About.css";
+// import img1 from '../images/front.jpeg';
 import img1 from '../images/front.jpeg';
 
 const About = () => {
@@ -35,7 +36,7 @@ const About = () => {
                 {/* Team Member 2 */}
                 <div className="board-member">
                     <div className="board-member__body">
-                    <h3 className="board-member__title">Hamza </h3>
+                    <h3 className="board-member__title">Sheikh Ahmed Nuur </h3>
                     <p className="board-member__subtitle">Vice President</p>
                     </div>
                 </div>
@@ -43,26 +44,26 @@ const About = () => {
                 {/* Team Member 3 */}
                 <div className="board-member">
                     <div className="board-member__body">
-                    <h3 className="board-member__title">Abdifatah</h3>
+                    <h3 className="board-member__title">Sheikh Ahmed Nuur</h3>
                     <p className="board-member__subtitle">Secretary</p>
                     </div>
                 </div>
                 {/* Team Member 4 */}
                 <div className="board-member">
                     <div className="board-member__body">
-                    <h3 className="board-member__title">Abdifatah</h3>
+                    <h3 className="board-member__title">Sheikh Ahmed Nuur</h3>
                     <p className="board-member__subtitle">Treasurer</p>
                     </div>
                 </div>
                 <div className="board-member">
                     <div className="board-member__body">
-                    <h3 className="board-member__title">Abdifatah</h3>
+                    <h3 className="board-member__title">Sheikh Ahmed Nuur</h3>
                     <p className="board-member__subtitle">Treasurer</p>
                     </div>
                 </div>
                 <div className="board-member">
                     <div className="board-member__body">
-                    <h3 className="board-member__title">Abdifatah</h3>
+                    <h3 className="board-member__title">Sheikh Ahmed Nuur</h3>
                     <p className="board-member__subtitle">Treasurer</p>
                     </div>
                 </div>
