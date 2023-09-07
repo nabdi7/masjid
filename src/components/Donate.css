@@ -1,0 +1,51 @@
+.donate {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.donate-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    flex-direction: column; /* Change to column to stack elements vertically */
+}
+
+.donate-title {
+    font-family: "Montserrat";
+    color: #038000;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 1rem; /* Add margin to separate the title from QR codes */
+}
+
+.donate-scan {
+    display: flex;
+    justify-content: center; /* Center QR codes horizontally */
+    align-items: center;
+    flex-wrap: wrap; /* Allow them to wrap to the next row on smaller screens */
+    padding-left: 4rem;
+    margin-top: 1rem; /* Add some space between the title and QR codes */
+    margin-bottom: 2rem;
+    max-width: 90%;
+}
+
+.qr-code {
+    flex: 1; 
+    text-align: center;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.qr-code h1 {
+    font-size: 1.2rem;
+}
+
+.qr-code img {
+    max-width: 40%;
+    height: auto;
+}

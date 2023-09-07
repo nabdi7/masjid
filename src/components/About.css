@@ -1,5 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:wght@100&display=swap');
 
+.about {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: flex-start;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+.about-title {
+    font-family: "Montserrat";
+    color: #038000;
+    font-size: 2rem;
+    margin: 0;
+    margin-bottom: 2rem;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.about-image {
+    flex: 1;
+    padding: 0 1rem;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.about-text {
+    flex: 1;
+    padding: 0 1rem;
+}
+
 .board {
     display: flex;
     justify-content: center;
