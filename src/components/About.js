@@ -2,12 +2,16 @@ import React from "react";
 import "./About.css";
 // import img1 from '../images/front.jpeg';
 import img1 from '../images/front.jpeg';
+import img2 from '../images/pic3.jpg';
 
 const About = () => {
     return (
         <>
         {/* about the masjid */}
         <section className='about'>
+            <div className='banner-image'>
+                <img src={img2} alt="banner masjid" />
+            </div>
             <h1 className='about-title'>About Us</h1>
             <div className="about-container">
                 <div className='about-image'>
@@ -16,8 +20,8 @@ const About = () => {
                 <div className='about-text'>
                     <p>Al Huda Mosque is a non-profit organization that 
                         serves the Muslim community in Kent, Washington. 
-                        opened in 2007
                     </p>
+                    <p> It was opened in 2007 </p>
                 </div>
             </div>
         </section>
@@ -69,7 +73,6 @@ const About = () => {
                 </div>
             </div>
       </section>
-        {/* board members */}
 
         
         </>

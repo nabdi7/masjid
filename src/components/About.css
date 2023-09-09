@@ -22,12 +22,12 @@
     align-items: center;
 }
 
-.about-image {
+.about-image, .banner-image {
     flex: 1;
     padding: 0 1rem;
 }
 
-.about-image img {
+.about-image, .banner-image img {
     max-width: 100%;
     height: auto;
 }

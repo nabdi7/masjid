@@ -1,11 +1,15 @@
 import React from "react";
 import "./Contact.css";
+import img1 from '../images/pic3.jpg';
 
 const Contact = () => {
     return (
         <>
         {/* about the masjid */}
         <section className='contact'>
+            <div className='contact-image'>
+                <img src={img1} alt="contact image" />
+            </div>
             <div className='contact-container'>
                 <h1>Contact Us</h1>
                 <div className='contact-section'>
