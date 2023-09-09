@@ -7,6 +7,20 @@
     align-items: center;
     padding: 3rem 0;
 }
+.banner-image {
+    position: absolute;
+    top: -5%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.banner-image img {
+    max-height: auto; 
+    width: 100%;
+    object-fit: cover;
+}
 
 .about-title {
     font-family: "Montserrat";
@@ -22,12 +36,12 @@
     align-items: center;
 }
 
-.about-image, .banner-image {
+.about-image {
     flex: 1;
     padding: 0 1rem;
 }
 
-.about-image, .banner-image img {
+.about-image img {
     max-width: 100%;
     height: auto;
 }
@@ -38,55 +52,58 @@
 }
 
 .board {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #fff;
-    padding: 0 2rem;
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    margin-bottom: 20px;
 }
 
 .board-title {
     font-family: "Montserrat";
     font-size: 2rem;
-    color: #000;
-    margin: 1rem 0;
+    margin-bottom: 2rem;
 }
 
 .board-members {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center; 
 }
-
+  
 .board-member {
-    flex-basis: calc(33.33% - 20px); /* Adjust the width as needed */
-    background-color: #f8f8f8;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s;
+    margin: 10px;
+    width: 250px;
 }
-
-.board-member:hover {
-    transform: translateY(-5px);
+  
+.board-member__image img {
+    max-width: 100%;
+    max-height: 200px;
+    margin-bottom: 5px;
 }
-
+  
 .board-member__body {
-    text-align: center;
+    padding: 10px;
+    text-align: left;
 }
-
+  
 .board-member__title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin: 0;
-}
+    font-family: "Montserrat Bold";
+    font-size: 16px;
+    margin-bottom: 0.25rem;
+} 
 
 .board-member__subtitle {
-    font-size: 1.2rem;
-    color: #777;
-    margin: 0;
+    font-size: 14px;
 }
+  
+.board-member__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.board-member__body {
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s;
+    margin-bottom: 3.25rem;
+}
+/* .board-member:hover .board-member__body {
+    background-color: #f1f1f1;
+} */

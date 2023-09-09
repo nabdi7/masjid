@@ -3,6 +3,7 @@ import "./About.css";
 // import img1 from '../images/front.jpeg';
 import img1 from '../images/front.jpeg';
 import img2 from '../images/pic3.jpg';
+import boardImage1 from '../images/board2.jpg'
 
 const About = () => {
     return (
@@ -28,47 +29,53 @@ const About = () => {
 
         <section className="board">
             <h2 className='board-title'>Board Members</h2>
+            <span className='underline'>
+                
+            </span>
             <div className="board-members">
-                {/* Team Member 1 */}
                 <div className="board-member">
-                    <div className="board-member__body">
-                    <h3 className="board-member__title">Sheikh Ahmed Nuur</h3>
-                    <p className="board-member__subtitle">President</p>
+                    <div className="board-member__image">
+                        <img src={boardImage1} alt="Founder" />
                     </div>
-                </div>
-
-                {/* Team Member 2 */}
-                <div className="board-member">
                     <div className="board-member__body">
-                    <h3 className="board-member__title">Sheikh Ahmed Nuur </h3>
-                    <p className="board-member__subtitle">Vice President</p>
-                    </div>
-                </div>
-
-                {/* Team Member 3 */}
-                <div className="board-member">
-                    <div className="board-member__body">
-                    <h3 className="board-member__title">Sheikh Ahmed Nuur</h3>
-                    <p className="board-member__subtitle">Secretary</p>
-                    </div>
-                </div>
-                {/* Team Member 4 */}
-                <div className="board-member">
-                    <div className="board-member__body">
-                    <h3 className="board-member__title">Sheikh Ahmed Nuur</h3>
-                    <p className="board-member__subtitle">Treasurer</p>
+                        <h3 className="board-member__title">Sheikh Ahmed Nuur</h3>
+                        <p className="board-member__subtitle">President</p>
                     </div>
                 </div>
                 <div className="board-member">
+                    <div className="board-member__image">
+                        <img src={boardImage1} alt="Founder" />
+                    </div>
                     <div className="board-member__body">
-                    <h3 className="board-member__title">Sheikh Ahmed Nuur</h3>
-                    <p className="board-member__subtitle">Treasurer</p>
+                        <h3 className="board-member__title">Sheikh Ahmed Nuur </h3>
+                        <p className="board-member__subtitle">Vice President</p>
                     </div>
                 </div>
                 <div className="board-member">
+                    <div className="board-member__image">
+                        <img src={boardImage1} alt="Founder" />
+                    </div>
                     <div className="board-member__body">
-                    <h3 className="board-member__title">Sheikh Ahmed Nuur</h3>
-                    <p className="board-member__subtitle">Treasurer</p>
+                        <h3 className="board-member__title">Sheikh Ahmed Nuur</h3>
+                        <p className="board-member__subtitle">Secretary</p>
+                    </div>
+                </div>
+                <div className="board-member">
+                    <div className="board-member__image">
+                        <img src={boardImage1} alt="Founder" />
+                    </div>
+                    <div className="board-member__body">
+                        <h3 className="board-member__title">Sheikh Ahmed Nuur</h3>
+                        <p className="board-member__subtitle">Treasurer</p>
+                    </div>
+                </div>
+                <div className="board-member">
+                    <div className="board-member__image">
+                        <img src={boardImage1} alt="Founder" />
+                    </div>
+                    <div className="board-member__body">
+                        <h3 className="board-member__title">Sheikh Ahmed Nuur</h3>
+                        <p className="board-member__subtitle">Treasurer</p>
                     </div>
                 </div>
             </div>

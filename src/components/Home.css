@@ -17,13 +17,13 @@
 .subheading, .description {
     color: white;
     text-align: center;
-    font-family: Montserrat;
+    font-family: "Montserrat";
     font-size: 18px;
     font-style: italic;
 }
 
 .title {
-    font-family: Montserrat;
+    font-family: "Montserrat";
     font-size: 59px;
 }
 
@@ -37,7 +37,7 @@
     transition: all 0.3s ease;
     text-decoration: none;
     justify-content: center;
-    font-family: Montserrat;
+    font-family: "Montserrat";
 }
 
 .background-image .button.home-button {
