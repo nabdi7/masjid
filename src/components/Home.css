@@ -14,17 +14,19 @@
     padding-left: 4rem;
 }
 
+.title {
+    font-family: "Montserrat";
+    font-size: 59px;
+    margin-bottom: 1rem;
+}
+
 .subheading, .description {
     color: white;
     text-align: center;
     font-family: "Montserrat";
     font-size: 18px;
     font-style: italic;
-}
-
-.title {
-    font-family: "Montserrat";
-    font-size: 59px;
+    margin-bottom: 1rem;
 }
 
 .button {
@@ -84,6 +86,7 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 2rem;
+    max-width: 90%;
 }
 
 .services-box {
@@ -132,9 +135,22 @@
 }
 
 .gallery-title {
+    /* color: #038000; */
     font-family: "Montserrat";
-    color: #038000;
     font-size: 28px;
+    margin-bottom: 3rem; 
+    position: relative; 
+    display: inline-block; 
+}
+
+.gallery-title::after {
+    content: "";
+    display: block;
+    width: 80px; 
+    border-bottom: 2px solid #038000;  
+    position: absolute;
+    bottom: -15px;
+    left: 25%; 
 }
 .gallery-container {
     display: flex;

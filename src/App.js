@@ -5,7 +5,7 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import About from './components/About';
 import Services from './components/Services';
-import Programs from './components/Programs';
+import Education from './components/Education';
 import Donate from './components/Donate';
 import Prayer from './components/Prayer';
 import Contact from './components/Contact';
@@ -20,7 +20,7 @@ function App() {
           <Route index element={<Home />}  />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
-          <Route path="/programs" element={<Programs />} />
+          <Route path="/education" element={<Education />} />
           <Route path="/donate" element={<Donate />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/prayer" element={<Prayer />} />

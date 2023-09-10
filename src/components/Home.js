@@ -7,6 +7,7 @@ import img1 from '../images/front.jpeg';
 import img2 from '../images/interior2.jpeg';
 import img3 from '../images/interior1.jpeg';
 import img4 from '../images/interior3.jpeg';
+import backCover from '../images/pic1.jpg';
 
 const Home = () => {
     const navigate = useNavigate();
@@ -28,9 +29,9 @@ const Home = () => {
             <h1 className='title'>Welcome to Al Huda Mosque</h1>
             {/* <h1>﷽</h1> */}
             {/* <h1>"AND ALLAH INVITES TO THE HOME OF PEACE” Surah Yunus", Verse 25</h1> */}
-            <p className='subheading'>In the name of Allah, the most gracious, most merciful.</p>
-            <p className='description'>Al Huda Mosque is a non-profit organization that 
-                serves the Muslim community in Kent, Washington.</p>
+            <h1 className='subheading'>In the name of Allah, the most gracious, most merciful.</h1>
+            {/* <p className='description'>Al Huda Mosque is a non-profit organization that 
+                serves the Muslim community in Kent, Washington.</p> */}
             <Link to="/about" className='button home-button' onClick={scrollToAbout}>Learn More</Link>
         </div>
 
@@ -121,6 +122,7 @@ const Home = () => {
         {/* A masjid for everyone */}
         {/* todo: add a background image */}
         <section className='masjid-everyone'>
+            {/* <img src={backCover} alt='background cover'/> */}
             <div className='masjid-everyone-container'>
                 <div className='masjid-everyone-box'>
                     <h1 className='masjid-everyone-title'>A MASJID FOR EVERYONE</h1>
