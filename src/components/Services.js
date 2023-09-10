@@ -9,11 +9,11 @@ import burial from '../images/burial.jpg'
 const Services = () => {
     return (
         <>
-        <section className="Services">
+        <section className="services">
             <div className='services-image'>
                 <img src={img1} alt="services image" />
             </div>
-            <h1>Services</h1>
+            <h1 className='service-title'>Services</h1>
 
             {/* Counseling Services:We offer confidential counseling 
             services for members of our community who are experiencing 
@@ -23,38 +23,38 @@ const Services = () => {
             <div className='services-container'>
                 <div className='services-section'>
                     <div className='services-box'>
-                        <h2>Marriage Services</h2>
-                        <p>We offer confidential counseling services for members of our community who are experiencing personal or family difficulties. Our counseling services are provided by qualified and experienced professionals who are sensitive to the unique needs of the Muslim community.</p>
-                        <div className='box-image'>
-                            <img src={nikkah} alt="" />
-                        </div>
+                        <h2 className='services-box-title'>Marriage Services</h2>
+                        <p className='services-description'>We offer confidential counseling services for members of our community who are experiencing personal or family difficulties. Our counseling services are provided by qualified and experienced professionals who are sensitive to the unique needs of the Muslim community.</p>
+                    </div>
+                    <div className='box-image'>
+                        <img src={nikkah} alt="" />
+                    </div>
+                </div>
+                <div className='services-section'>
+                    <div className='box-image'>
+                        <img src={counseling} alt="" />
+                    </div>
+                    <div className='services-box'>
+                        <h2 className='services-box-title'>Counseling Services</h2>
+                        <p className='services-description'>We offer confidential counseling services for members of our community who are experiencing personal or family difficulties. Our counseling services are provided by qualified and experienced professionals who are sensitive to the unique needs of the Muslim community.</p>
                     </div>
                 </div>
                 <div className='services-section'>
                     <div className='services-box'>
-                        <div className='box-image'>
-                            <img src={counseling} alt="" />
-                        </div>
-                        <h2>Counseling Services</h2>
-                        <p>We offer confidential counseling services for members of our community who are experiencing personal or family difficulties. Our counseling services are provided by qualified and experienced professionals who are sensitive to the unique needs of the Muslim community.</p>
+                        <h2 className='services-box-title'>Parental Support</h2>
+                        <p className='services-description'>We offer confidential counseling services for members of our community who are experiencing personal or family difficulties. Our counseling services are provided by qualified and experienced professionals who are sensitive to the unique needs of the Muslim community.</p>
+                    </div>
+                    <div className='box-image'>
+                        <img src={parental} alt="" />
                     </div>
                 </div>
                 <div className='services-section'>
-                    <div className='services-box'>
-                        <h2>Parental Support</h2>
-                        <p>We offer confidential counseling services for members of our community who are experiencing personal or family difficulties. Our counseling services are provided by qualified and experienced professionals who are sensitive to the unique needs of the Muslim community.</p>
-                        <div className='box-image'>
-                            <img src={parental} alt="" />
-                        </div>
+                    <div className='box-image'>
+                        <img src={burial} alt="" />
                     </div>
-                </div>
-                <div className='services-section'>
                     <div className='services-box'>
-                        <div className='box-image'>
-                            <img src={burial} alt="" />
-                        </div>
-                        <h2>Funeral Services</h2>
-                        <p>We offer confidential counseling services for members of our community who are experiencing personal or family difficulties. Our counseling services are provided by qualified and experienced professionals who are sensitive to the unique needs of the Muslim community.</p>
+                        <h2 className='services-box-title'>Funeral Services</h2>
+                        <p className='services-description'>We offer confidential counseling services for members of our community who are experiencing personal or family difficulties. Our counseling services are provided by qualified and experienced professionals who are sensitive to the unique needs of the Muslim community.</p>
                     </div>
                 </div>
             </div>
