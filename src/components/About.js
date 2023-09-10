@@ -19,19 +19,21 @@ const About = () => {
                     <img src={img1} alt="front masjid" />
                 </div>
                 <div className='about-text'>
-                    <p>Al Huda Mosque is a non-profit organization that 
-                        serves the Muslim community in Kent, Washington. 
+                    <p>
+                        Al Huda Mosque is a non-profit organization dedicated 
+                        to serving the Muslim community in Kent, Washington. 
+                        Established in 2007, our mission is to provide a welcoming 
+                        and inclusive environment for all members of our community 
+                        to worship, learn, and grow together. We are committed to 
+                        meeting the diverse needs of our community and promoting 
+                        unity and understanding among our members.
                     </p>
-                    <p> It was opened in 2007 </p>
                 </div>
             </div>
         </section>
 
         <section className="board">
             <h2 className='board-title'>Board Members</h2>
-            <span className='underline'>
-                
-            </span>
             <div className="board-members">
                 <div className="board-member">
                     <div className="board-member__image">
