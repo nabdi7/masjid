@@ -36,52 +36,52 @@ const Home = () => {
         </div>
 
         {/* services */}
-        <section className='services'>
-            <h1 className='services-title'>Our Services</h1>
-            <h1 className='services-description'>Serving Our Community</h1>
-            <div className='services-container'>
-                <div className='services-box'>
+        <section className='home-services'>
+            <h1 className='home-services-title'>Our Services</h1>
+            <h1 className='home-services-description'>Serving Our Community</h1>
+            <div className='home-services-container'>
+                <div className='home-services-box'>
                     <div className='icons'>
                         <FontAwesomeIcon icon={faBookQuran} style={{ color: '#038000' }} />
                     </div>
-                    <h1 className='services-box-title'>Quran Program</h1>
-                    <p className='services-box-description'>Explore the divine 
+                    <h1 className='home-services-box-title'>Quran Program</h1>
+                    <p className='home-services-box-description'>Explore the divine 
                     wisdom of the Holy Quran through our structured courses, 
                     expert guidance, and a welcoming community. Join us on a 
                     journey of spiritual growth and connection with the Quranic 
                     teachings.</p>
                     <Link to="/services" className='button learn-more' onClick={scrollToServices}>Learn More</Link>
                 </div>
-                <div className='services-box'>
+                <div className='home-services-box'>
                     <div className='icons'>
                         <FontAwesomeIcon icon={faHeart} style={{ color: '#038000' }} />
                     </div>
-                    <h1 className='services-box-title'>Nikkah Services</h1>
-                    <p className='services-box-description'>Elevate your wedding 
+                    <h1 className='home-services-box-title'>Nikkah Services</h1>
+                    <p className='home-services-box-description'>Elevate your wedding 
                     day with our Nikkah Services, where we ensure a seamless and 
                     blessed marriage ceremony rooted in Islamic traditions, 
                     creating beautiful memories for couples and their families.
                     </p>
                     <Link to="/services" className='button learn-more' onClick={scrollToServices}>Learn More</Link>
                 </div>
-                <div className='services-box'>
+                <div className='home-services-box'>
                     <div className='icons'>
                         <FontAwesomeIcon icon={faPeopleGroup} style={{color: "#038000",}} />
                     </div>
-                    <h1 className='services-box-title'>Halaqas</h1>
-                    <p className='services-box-description'>Join our Halaqas for 
+                    <h1 className='home-services-box-title'>Halaqas</h1>
+                    <p className='home-services-box-description'>Join our Halaqas for 
                     spiritual growth and community connection. These engaging 
                     sessions explore various aspects of Islamic knowledge, 
                     fostering faith, and building lasting bonds among participants.
                     </p>
                     <Link to="/services" className='button learn-more' onClick={scrollToServices}>Learn More</Link>
                 </div>
-                <div className='services-box'>
+                <div className='home-services-box'>
                     <div className='icons'>
                         <FontAwesomeIcon icon={faBed} style={{color: "#038000",}} />
                     </div>
-                    <h1 className='services-box-title'>Funeral service</h1>
-                    <p className='services-box-description'>Our Funeral Services 
+                    <h1 className='home-services-box-title'>Funeral service</h1>
+                    <p className='home-services-box-description'>Our Funeral Services 
                     offer compassionate support during times of loss, preserving 
                     Islamic customs with dignity. We guide families through the 
                     process, providing solace and respectful handling of their 

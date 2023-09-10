@@ -2,11 +2,22 @@
     padding: 2rem;
 }
 
-.service-title {
+.services-image {
+    width: 100%; /* Make the image take the full width */
+    height: auto; /* Maintain aspect ratio */
+    position: absolute; /* Position the image absolutely */
+    top: 0; /* Position at the top of the container */
+    z-index: -1; /* Place the image behind other content */
+    left: 10px;
+    background-color: #f8f8f8
+}
+
+.services-title {
     font-family: "Montserrat";
-    color: #038000;
-    font-size: 28px;
-    margin-bottom: 2rem;
+    /* color: #038000; */
+    font-size: 35px;
+    margin-top: 2rem; /* Adjust the margin to leave space for the image */
+    margin-bottom: 3rem;
 }
 
 .services-container {
@@ -16,13 +27,15 @@
     align-items: flex-start; /* Align sections to the top */
     max-width: 90%;
     margin: 2rem auto;
+    position: relative; /* Make the container relative for positioning */
+    margin-top: 6rem;
 }
 
 .services-section {
     display: flex;
     flex-direction: row;
     width: 100%;
-    margin-bottom: 2rem;
+    margin-bottom: 7rem;
 }
 
 .services-box {
@@ -32,8 +45,9 @@
 
 .services-box-title {
     font-family: "Montserrat";
-    font-size: 24px;
+    font-size: 30px;
     margin-bottom: 1rem;
+    color: #038000;
 }
 
 .services-description {
@@ -53,4 +67,90 @@
     max-width: 100%;
     height: auto;
     max-height: 300px; /* Adjust the maximum image height as needed */
+}
+
+/* contact section */
+.contacted-sections {
+    max-width: fit-content; /* Increase the max-width to 800px */
+    margin: 0 auto;
+    padding: 40px;
+}
+  
+.contacted-sections h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative; /* Add relative positioning */
+}
+  
+.contacted-page h2::after {
+    content: "";
+    display: block;
+    width: 60px; /* Adjust the width as needed */
+    height: 3px; /* Adjust the height as needed */
+    background-color: #284b63;
+    position: absolute;
+    bottom: -15px; /* Adjust the distance from the heading */
+    left: 50%; /* Center the line horizontally */
+    transform: translateX(-50%); /* Center the line horizontally */
+}
+  
+.contacted-details {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    justify-content: space-between;
+}
+  
+.contacted-info a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s;
+}
+  
+.contacted-info a:hover {
+    text-decoration: none;
+    color: #1c3441;
+}
+  
+.contacted-item {
+    /* flex-basis: calc(33.33% - 20px); */
+    text-align: center;
+    margin-bottom: 20px; /* Add margin-bottom for space between items */
+    margin-right: 20px; /* Add margin-bottom for space */
+}
+  
+.contacted-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #ffffff;
+    box-shadow: 0px 0px 47px 0px #f0ebeb;
+    height: auto;
+    padding: 60px; /* Add padding for space */
+}
+  
+.contacted-icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding: 10px;
+    color: #038000;
+}
+  
+.contacted-info {
+    font-size: 24px;
+}
+  
+.contacted-info p {
+    font-size: 18px;
+    margin-bottom: 0;
+}
+.contacted-info p:hover{
+    text-decoration: none;
+    color: #038000;
 }
