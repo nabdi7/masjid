@@ -2,18 +2,19 @@ import React from "react";
 import "./About.css";
 // import img1 from '../images/front.jpeg';
 import img1 from '../images/front.jpeg';
-import img2 from '../images/pic3.jpg';
+import img2 from '../images/pic1.jpg';
 import boardImage1 from '../images/board2.jpg'
 
 const About = () => {
     return (
         <>
         {/* about the masjid */}
+        <div className="title-background">
+            <img src={img2} alt="Masjid" className='masjid-image' />
+            <h1>About Us</h1>
+        </div>
         <section className='about'>
-            <div className='banner-image'>
-                <img src={img2} alt="banner masjid" />
-            </div>
-            <h1 className='about-title'>About Us</h1>
+            {/* <h1 className='about-title'>About Us</h1> */}
             <div className="about-container">
                 <div className='about-image'>
                     <img src={img1} alt="front masjid" />

@@ -2,17 +2,22 @@ import React from "react";
 import "./Donate.css";
 import { SiCashapp, SiZelle, SiPaypal } from 'react-icons/si';
 import img1 from '../images/qr.png';
+import img2 from '../images/pic1.jpg';
 
 
 const Donate = () => {
     return (
         <>
         {/* donation */}
+        <div className="title-background">
+            <img src={img2} alt="Masjid" className='masjid-image' />
+            <h1>Donation</h1>
+        </div>
         <section className="donate">
             <div className='donate-container'>
-                <h1 className='donate-title'>Donation</h1>
+                {/* <h1 className='donate-title'>Donation</h1> */}
                 <p>Whoever builds a masjid for the sake of Allah, 
-                    Allah will build for hime a house like it in paradise 
+                    Allah will build for him a house like it in paradise 
                 </p>
             </div>
 

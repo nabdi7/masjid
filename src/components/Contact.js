@@ -1,6 +1,6 @@
 import React from "react";
 import "./Contact.css";
-import img1 from '../images/pic3.jpg';
+import img1 from '../images/pic1.jpg';
 import whatsApp from '../images/whatsapp.png';
 import { FaPhone, FaEnvelope, FaFacebookF } from 'react-icons/fa';
 import { BsInstagram, BsTwitter } from 'react-icons/bs';
@@ -9,8 +9,11 @@ const Contact = () => {
     return (
         <>
         {/* about the masjid */}
-        <section className='contact'>
+        <div className="title-background">
+            <img src={img1} alt="Masjid" className='masjid-image' />
             <h1>Contact Us</h1>
+        </div>
+        <section className='contact'>
             <div className='contact-container'>
                 <div className='contact-left'>
                     <div className='contact-box-horizontal'>

@@ -2,6 +2,7 @@ import React, { useState }  from "react";
 import "./Services.css";
 import { Link, useNavigate } from 'react-router-dom';
 import img1 from '../images/pic8.png';
+import img2 from '../images/pic1.jpg';
 import nikkah from '../images/nikaah.jpeg'
 import counseling from '../images/counseling.jpeg'
 import parental from '../images/parental.webp'
@@ -42,8 +43,12 @@ const Services = () => {
 };
     return (
         <>
+        <div className="title-background">
+            <img src={img2} alt="Masjid" className='masjid-image' />
+            <h1>Services</h1>
+        </div>
         <section className="services">
-            <h1 className='services-title'>Services</h1>
+            {/* <h1 className='services-title'>Services</h1> */}
             <div className='services-image'>
                 <img src={img1} alt="services image" />
             </div>

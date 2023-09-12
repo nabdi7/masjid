@@ -1,13 +1,18 @@
 import React from "react";
 import "./Prayer.css";
 import img1 from '../images/pic9.webp';
+import img2 from '../images/pic1.jpg';
 
 const Prayer = () => {
   return (
     <>
       {/* about the masjid */}
+      <div className="title-background">
+            <img src={img2} alt="Masjid" className='masjid-image' />
+            <h1>Prayer Times</h1>
+        </div>
       <section className='prayer'>
-        <h1>Prayer Times</h1>
+        {/* <h1>Prayer Times</h1> */}
         <div className='prayer-image'>
           <img src={img1} alt="prayer" />
         </div>

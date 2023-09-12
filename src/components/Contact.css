@@ -10,6 +10,29 @@ body {
 }
 
 /* Contact section styles */
+.title-background {
+    position: relative;
+    text-align: center;
+    height: 325px;
+}
+
+.title-background img {
+    width: 100%; /* Adjust the width as needed */
+    height: 100%; /* Make the image cover the entire container */
+    object-fit: cover; /* Maintain the image's aspect ratio */
+}
+
+.title-background h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: #fff; /* Title text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for better visibility */
+    z-index: 1;
+}
+
 .contact {
     display: flex;
     flex-direction: column;

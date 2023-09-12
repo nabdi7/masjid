@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Events.css";
+import img2 from '../images/pic1.jpg'
 import FullCalendar from "@fullcalendar/react";
 import dayGridPlugin from "@fullcalendar/daygrid";
 
@@ -34,8 +35,12 @@ const Events = () => {
 
   return (
     <>
+      <div className="title-background">
+          <img src={img2} alt="Masjid" className='masjid-image' />
+          <h1>Upcoming Events</h1>
+      </div>
       <section className="Events">
-        <h1 className="program-title">Upcoming Events</h1>
+        {/* <h1 className="program-title">Upcoming Events</h1> */}
 
         <FullCalendar
           plugins={[dayGridPlugin]}
