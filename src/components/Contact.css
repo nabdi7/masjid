@@ -34,7 +34,7 @@ body {
     flex-basis: 40%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: flex-start;
 }
 
@@ -43,10 +43,10 @@ body {
     align-items: center;
     margin-bottom: 2rem;
     white-space: nowrap;
+    margin-right: 2rem;
 }
 
 .contact-box {
-    /* width: 200px; */
     margin-right: 2rem;
     display: flex;
     flex-direction: column;
@@ -95,6 +95,18 @@ body {
     text-decoration: none;
 }
 
+.social-icons a:hover {
+    color: #038000;
+}
+.whatsapp {
+    margin-top: 2rem;
+}
+.whatsapp-image {
+    width: 80px; /* Adjust the width as needed */
+    height: 80px; /* Adjust the height as needed */
+    margin-top: 1rem;
+}
+
 /* Contact form styles */
 .contact-right {
     flex-basis: 60%;
@@ -104,7 +116,6 @@ body {
 }
 
 .contact-form form {
-    /* width: 420px; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -144,15 +155,11 @@ body {
 .location {
     text-align: center;
     margin-top: 2rem;
-}
-
-.location h1 {
-    font-size: 2rem;
     margin-bottom: 2rem;
 }
 
 .location-map iframe {
-    width: 100%;
+    width: 80%;
     height: 450px;
     border: none;
 }
@@ -160,6 +167,7 @@ body {
 @media (max-width: 768px) {
     .contact-container {
         flex-direction: column;
+        align-items: center;
     }
 
     .contact-left,
@@ -168,7 +176,16 @@ body {
         margin-right: 0;
     }
 
+    .whatsapp-image {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 1rem; 
+    }
+    .contact-right {
+        align-items: center;
+    }
+    
     .social-icons {
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
 }
