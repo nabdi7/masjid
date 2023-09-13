@@ -37,7 +37,9 @@
     width: 100%;
     margin-bottom: 7rem;
 }
-
+.brand {
+    background-color: #ccc;
+}
 .services-box {
     flex: 1;
     padding: 1rem;

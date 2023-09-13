@@ -24,13 +24,13 @@
     object-fit: cover;
 }
 
-.about-title {
+/* .about-title {
     font-family: "Montserrat";
     color: #038000;
     font-size: 2rem;
     margin: 0;
     margin-bottom: 2rem;
-}
+} */
 
 .about-container {
     display: flex;

@@ -67,6 +67,7 @@ const Services = () => {
                         <img src={nikkah} alt="" />
                     </div>
                 </div>
+            
                 <div className='services-section'>
                     <div className='box-image'>
                         <img src={counseling} alt="" />
@@ -138,7 +139,7 @@ const Services = () => {
                     </div>
                 </div>
             </div>
-
+          
         </section>
         
 

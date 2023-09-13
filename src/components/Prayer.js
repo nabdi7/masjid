@@ -16,20 +16,21 @@ const Prayer = () => {
         <div className='prayer-image'>
           <img src={img1} alt="prayer" />
         </div>
-        <p>"Indeed, performing prayers is a duty on the believers at the appointed times" (Surah An-Nisa, Verse 103)</p>
+        <p>"Indeed, performing prayers is a duty on the believers at 
+          the appointed times" (Qur'an 4, Verse 103)</p>
       </section>
 
       {/* Display the prayer times */}
       <section className='prayer-times'>
-        <iframe
-          style={{
-            width: "290px",
-            height: "358px",
-            border: "1px solid #ddd",
-          }}
-          scrolling="no"
-          src="https://www.islamicfinder.org/prayer-widget/"
-        ></iframe>
+      <iframe 
+      src="https://timing.athanplus.com/masjid/widgets/embed?theme=1&masjid_id=0Lbp1Ndo&color=038000" 
+      type="text/html" 
+      width="100%" 
+      height="560" 
+      frameborder="0" 
+      allowtransparency="true"
+      ></iframe>
+
       </section>
     </>
   );
