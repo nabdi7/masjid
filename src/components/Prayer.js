@@ -1,7 +1,7 @@
 import React from "react";
 import "./Prayer.css";
 import img1 from '../images/pic9.webp';
-import img2 from '../images/pic1.jpg';
+import img2 from '../images/main.jpg';
 
 const Prayer = () => {
   return (
@@ -12,7 +12,6 @@ const Prayer = () => {
             <h1>Prayer Times</h1>
         </div>
       <section className='prayer'>
-        {/* <h1>Prayer Times</h1> */}
         <div className='prayer-image'>
           <img src={img1} alt="prayer" />
         </div>
@@ -22,14 +21,16 @@ const Prayer = () => {
 
       {/* Display the prayer times */}
       <section className='prayer-times'>
-      <iframe 
-      src="https://timing.athanplus.com/masjid/widgets/embed?theme=1&masjid_id=0Lbp1Ndo&color=038000" 
-      type="text/html" 
-      width="100%" 
-      height="560" 
-      frameborder="0" 
-      allowtransparency="true"
-      ></iframe>
+        <div className='prayer-widget'>
+          <iframe 
+          src="https://timing.athanplus.com/masjid/widgets/embed?theme=1&masjid_id=0Lbp1Ndo&color=038000" 
+          type="text/html" 
+          width="1000" 
+          height="560" 
+          frameborder="0" 
+          allowtransparency="true"
+          ></iframe>
+        </div>
 
       </section>
     </>

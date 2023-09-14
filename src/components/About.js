@@ -2,7 +2,7 @@ import React from "react";
 import "./About.css";
 // import img1 from '../images/front.jpeg';
 import img1 from '../images/front.jpeg';
-import img2 from '../images/pic1.jpg';
+import img2 from '../images/main.jpg';
 import boardImage1 from '../images/board2.jpg'
 
 const About = () => {

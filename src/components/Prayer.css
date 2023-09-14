@@ -1,24 +1,65 @@
 /* Prayer.css */
 
 .prayer {
-    text-align: center;
-    margin-top: 20px;
-  }
+  text-align: center;
+  margin-top: 2.5rem;
+  margin-bottom: 5rem;
+}
   
-  .prayer h1 {
-    font-size: 24px;
-    color: #333;
+.prayer h1 {
+  font-size: 24px;
+  color: #333;
+}
+  
+.prayer-image img {
+  max-width: 100%; 
+  max-height: 200px; 
+  margin: 20px 0;
+}
+  
+.prayer p {
+  font-family: "Montserrat";
+  font-size: 15px;
+  color: #000;
+  margin-bottom: 30px;
+}
+
+.prayer-widget {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #ffffff;
+  box-shadow: 0px 0px 47px 0px #f0ebeb;
+  height: auto;
+  padding: 30px;
+}
+  
+@media (max-width: 768px) {
+  .prayer {
+    margin-top: 2.5rem;
+    margin-bottom: 3rem;
   }
   
   .prayer-image img {
-    max-width: 100%; /* Ensure the image scales down proportionally */
-    max-height: 200px; /* Set a maximum height for the image */
-    margin: 20px 0;
+    max-width: 95%;
+    max-height: auto;
+    margin: 10px 0;
   }
   
   .prayer p {
-    font-size: 16px;
-    color: #777;
-    margin-bottom: 30px;
+    font-size: 15px;
+    margin-bottom: 2rem;
   }
   
+  .prayer-widget {
+    padding: 20px;
+  }
+}
+
+
+
+
+

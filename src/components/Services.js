@@ -45,7 +45,7 @@ const Services = () => {
         <>
         <div className="title-background">
             <img src={img2} alt="Masjid" className='masjid-image' />
-            <h1>Services</h1>
+            <h1>Programs</h1>
         </div>
         <section className="services">
             {/* <h1 className='services-title'>Services</h1> */}
@@ -162,7 +162,7 @@ const Services = () => {
                         <FaEnvelope />
                         </div>
                         <div className='contacted-info'>
-                        <a href='mailto:info@qualitydesigns.site' className='email-link'>info@qualitydesigns.site</a>
+                        <a href='mailto:info@qualitydesigns.site' className='email-link'>info@alhudamasjid.com</a>
                         </div>
                     </div>
                 </div>
@@ -172,7 +172,7 @@ const Services = () => {
                         <FaMapMarkerAlt />
                         </div>
                         <div className='contacted-info'>
-                        <a href='https://goo.gl/maps/oQHJCMPBP9Tqk1Tq5'>Seattle, WA</a>
+                        <a href='https://goo.gl/maps/oQHJCMPBP9Tqk1Tq5'> Kent, WA</a>
                         {/* <p>Seattle, WA</p> */}
                         </div>
                     </div>
