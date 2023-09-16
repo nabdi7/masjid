@@ -33,44 +33,65 @@ body {
     z-index: 1;
 }
 
-.contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 3rem 0;
+div {
+    display: block;
+  }
+  
+.contact-page {
+    max-width: fit-content; /* Increase the max-width to 800px */
+    margin: 0 auto;
+    padding: 40px;
 }
-
+  
+.contact-page h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative; /* Add relative positioning */
+}
+  
+.contact-page h2::after {
+    content: "";
+    display: block;
+    width: 60px; /* Adjust the width as needed */
+    height: 3px; /* Adjust the height as needed */
+    background-color: #038000;
+    position: absolute;
+    bottom: -15px; /* Adjust the distance from the heading */
+    left: 50%; /* Center the line horizontally */
+    transform: translateX(-50%); /* Center the line horizontally */
+}
 .contact-container {
     display: flex;
-    align-items: flex-start;
-    margin-bottom: 40px;
     justify-content: space-between;
-}
-
-.contact h1 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-}
-
-/* Contact left section styles */
-.contact-left {
-    flex-basis: 40%;
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-}
+    margin-bottom: 40px;
+    max-width: 1200px; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center the container horizontally */
+  }
 
-.contact-box-horizontal {
-    display: flex; 
-    align-items: center;
-    margin-bottom: 2rem;
-    white-space: nowrap;
-    margin-right: 2rem;
+  .contact-left {
+    flex-basis: calc(40% - 20px); /* Adjust the width as needed */
+  }
+  
+.contact-information a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s;
 }
-
+  
+.contact-information a:hover {
+    text-decoration: none;
+    color: #1c3441;
+}
+  
+.contact-inside {
+    flex-basis: calc(33.33% - 20px);
+    text-align: center;
+    margin-bottom: 20px; /* Add margin-bottom for space */
+}
+  
 .contact-box {
-    margin-right: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -78,101 +99,91 @@ body {
     background-color: #ffffff;
     border-radius: 10px;
     border: 1px solid #ffffff;
-    box-shadow: 0px 0px 10px 0px #f0ebeb;
+    box-shadow: 0px 0px 47px 0px #f0ebeb;
     height: auto;
-    padding: 30px;
+    padding: 20px; /* Add padding for space */
 }
-
-.contact-box:last-child {
-    margin-right: 0; 
-}
-
-.contact-box-icon {
-    font-size: 1.5rem;
+  
+.contact-icons {
+    font-size: 32px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding: 10px;
     color: #038000;
 }
-
-.contact-box-description {
-    margin-top: 0.5rem;
-    font-size: 1rem;
+  
+.contact-information {
+    font-size: 24px;
+}
+  
+.contact-information p {
+    font-size: 18px;
+    margin-bottom: 0;
+}
+.contact-information p:hover{
     text-decoration: none;
-    color: #333; 
+    color: #007bff;
 }
-
-.contact-box-description a {
-    text-decoration: none;
-    color: inherit;
-    transition: color 0.3s;
+.whatsapp-code {
+    width: 30%;
+    height: auto;
 }
-
-.social-icons {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-}
-
-.social-icons a {
-    font-size: 1.5rem;
-    margin: 0 0.5rem;
-    color: #333;
-    text-decoration: none;
-}
-
-.social-icons a:hover {
-    color: #038000;
-}
-.whatsapp {
-    margin-top: 2rem;
-}
-.whatsapp-image {
-    width: 80px; /* Adjust the width as needed */
-    height: 80px; /* Adjust the height as needed */
-    margin-top: 1rem;
-}
-
-/* Contact form styles */
 .contact-right {
-    flex-basis: 60%;
+    flex-basis: calc(40% - 20px); /* Adjust the width as needed */
+    margin-left: 40px; /* Add more margin between left and right sections */
+  }
+  
+.contact-form {
+    flex-basis: 60%; /* this makes it bigger: later make 60% */
+    margin-bottom: 0;
+    padding: 60px; /* make it 60 */
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 47px 0px #f0ebeb;
+    margin-right: 10px; 
+}
+  
+.contact-form h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+  
+form {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
-
-.contact-form form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  
+input[type='text'],
+input[type='email'],
+input[type='tel'],
+textarea {
+    padding: 12px;
+    margin-bottom: 15px;
 }
-
-.contact-form input[type="text"],
-.contact-form input[type="email"],
-.contact-form input[type="tel"],
-.contact-form textarea {
-    width: 100%;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-}
-
-.contact-form textarea {
+  
+textarea {
     resize: vertical;
 }
-
-.contact-form input[type="submit"] {
+  
+.send-message-button {
+    padding: 10px;
     background-color: #038000;
     color: #fff;
-    padding: 1rem 2rem;
     border: none;
-    border-radius: 5px;
-    font-size: 1rem;
+    border-radius: 4px;
     cursor: pointer;
 }
-
-.contact-form input[type="submit"]:hover {
-    background-color: #036700;
+  
+.send-message-button:hover{
+    background-color: #038000;
 }
+  
+.thank-you-message {
+    color: green; /* Change this color to your desired color */
+}
+
 
 /* Location section styles */
 .location {

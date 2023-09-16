@@ -1,11 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Contact.css";
 import img1 from '../images/pic1.jpg';
 import whatsApp from '../images/whatsapp.png';
-import { FaPhone, FaEnvelope, FaFacebookF } from 'react-icons/fa';
+import { FaPhone, FaEnvelope, FaFacebookF, FaMapMarkerAlt } from 'react-icons/fa';
 import { BsInstagram, BsTwitter } from 'react-icons/bs';
 
 const Contact = () => {
+    const [formSubmitted, setFormSubmitted] = useState(false);
+    const [contactMessage, setContactMessage] = useState('');
+    const [name, setName] = useState('');
+    const [phone, setPhone] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+
+    const handleSubmit = (event) => {
+        event.preventDefault(); 
+
+    setTimeout(() => {
+      setFormSubmitted(true);
+      setContactMessage('We got your message. Thanks!');
+      setTimeout(() => {
+        setContactMessage('');
+        setName('');
+        setPhone('');
+        setEmail('');
+        setMessage('');
+        setFormSubmitted(false); 
+      }, 2000);
+    }, 1000); 
+};
     return (
         <>
         {/* about the masjid */}
@@ -13,46 +36,79 @@ const Contact = () => {
             <img src={img1} alt="Masjid" className='masjid-image' />
             <h1>Contact Us</h1>
         </div>
-        <section className='contact'>
-            <div className='contact-container'>
+        <section className='contact-page'>
+            <div className="contact-container">
                 <div className='contact-left'>
-                    <div className='contact-box-horizontal'>
+                    <div className='contact-inside'>
                         <div className='contact-box'>
-                            <div className='contact-box-icon'>
+                            <div className='contact-icons'>
                                 <FaPhone />
                             </div>
-                            <div className='contact-box-description'>
-                                <a href='tel:+12345648910'>+1 234 567 8910</a>
-                            </div>
-                        </div>
-                        <div className='contact-box'>
-                            <div className='contact-box-icon'>
-                                <FaEnvelope />
-                            </div>
-                            <div className='contact-box-description'>
-                                <a href='mailto:' className='email-link'>alhuda@masjid.com</a>
+                            <div className='contact-information'>
+                                <a href='tel:+12068833462'>+1 206 883 3462</a>
                             </div>
                         </div>
                     </div>
-                    <div className='social-icons'>
+                    <div className='contact-inside'>
+                        <div className='contact-box'>
+                            <div className='contact-icons'>
+                                <FaEnvelope />
+                            </div>
+                            <div className='contact-information'>
+                                <a href='mailto:info@qualitydesigns.site' className='email-link'>info@qualitydesigns.site</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='whatsapp'>
+                        <h1> Join our whatsApp group</h1>
+                        <img src={whatsApp} alt="Masjid" className='whatsapp-code' />
+                    </div>
+                    <div className='socials'>
                         <a href="https://www.instagram.com/qd_designs/" target="_blank" rel="noopener noreferrer"><BsInstagram /></a>
                         <a href="https://www.facebook.com/people/Quality-Designs/61550453621801/?mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a>
                         <a href="https://twitter.com/Qd_designs/" target="_blank" rel="noopener noreferrer"><BsTwitter /></a>
                     </div>
-                    <div className='whatsapp'>
-                        <h4>Join our WhatsApp group</h4>
-                        <img src={whatsApp} alt="WhatsApp QR Code" className="whatsapp-image" />
-                    </div>
                 </div>
                 <div className='contact-right'>
                     <div className='contact-form'>
-                        <form action="">
-                            <input type="text" placeholder='Name' />
-                            <input type="email" placeholder='Email' />
-                            <input type="tel" placeholder='Phone' /> {/* Use type "tel" for phone input */}
-                            <textarea name="message" cols="30" rows="10" placeholder='Your Message'></textarea>
-                            <input type="submit" value="Send Message" className='button' />
-                        </form>
+                        <h3>Get In Touch</h3>
+                    <form onSubmit={handleSubmit}>
+                        <input type='text'
+                        placeholder='Name'
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
+                        required
+                        />
+                        <input
+                        type='tel'
+                        placeholder='Phone'
+                        value={phone}
+                        onChange={(e) => setPhone(e.target.value)}
+                        required
+                        />
+                        <input
+                        type='email'
+                        placeholder='Email'
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        required
+                        />
+                        <textarea
+                        placeholder='Your Message'
+                        rows='5'
+                        value={message}
+                        onChange={(e) => setMessage(e.target.value)}
+                        required
+                        ></textarea>
+                        <button className='send-message-button' type='submit'>
+                        Send Message
+                        </button>
+                        {formSubmitted && (
+                        <p className='thank-you-message'>
+                            We received your inquiry. Thanks!
+                        </p>
+                        )}
+                    </form>
                     </div>
                 </div>
             </div>
