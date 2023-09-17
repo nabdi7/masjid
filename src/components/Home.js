@@ -41,52 +41,52 @@ const Home = () => {
             <h1 className='home-services-description'>Serving Our Community</h1>
             <div className='home-services-container'>
                 <div className='home-services-box'>
-                    <div className='icons'>
+                    <div className='home-icons'>
                         <FontAwesomeIcon icon={faBookQuran} style={{ color: '#038000' }} />
                     </div>
                     <h1 className='home-services-box-title'>Quran Program</h1>
-                    <p className='home-services-box-description'>Explore the divine 
+                    {/* <p className='home-services-box-description'>Explore the divine 
                     wisdom of the Holy Quran through our structured courses, 
                     expert guidance, and a welcoming community. Join us on a 
                     journey of spiritual growth and connection with the Quranic 
-                    teachings.</p>
+                    teachings.</p> */}
                     <Link to="/services" className='button learn-more' onClick={scrollToServices}>Learn More</Link>
                 </div>
                 <div className='home-services-box'>
-                    <div className='icons'>
+                    <div className='home-icons'>
                         <FontAwesomeIcon icon={faHeart} style={{ color: '#038000' }} />
                     </div>
                     <h1 className='home-services-box-title'>Nikkah Services</h1>
-                    <p className='home-services-box-description'>Elevate your wedding 
+                    {/* <p className='home-services-box-description'>Elevate your wedding 
                     day with our Nikkah Services, where we ensure a seamless and 
                     blessed marriage ceremony rooted in Islamic traditions, 
                     creating beautiful memories for couples and their families.
-                    </p>
+                    </p> */}
                     <Link to="/services" className='button learn-more' onClick={scrollToServices}>Learn More</Link>
                 </div>
                 <div className='home-services-box'>
-                    <div className='icons'>
+                    <div className='home-icons'>
                         <FontAwesomeIcon icon={faPeopleGroup} style={{color: "#038000",}} />
                     </div>
                     <h1 className='home-services-box-title'>Halaqas</h1>
-                    <p className='home-services-box-description'>Join our Halaqas for 
+                    {/* <p className='home-services-box-description'>Join our Halaqas for 
                     spiritual growth and community connection. These engaging 
                     sessions explore various aspects of Islamic knowledge, 
                     fostering faith, and building lasting bonds among participants.
-                    </p>
+                    </p> */}
                     <Link to="/services" className='button learn-more' onClick={scrollToServices}>Learn More</Link>
                 </div>
                 <div className='home-services-box'>
-                    <div className='icons'>
+                    <div className='home-icons'>
                         <FontAwesomeIcon icon={faBed} style={{color: "#038000",}} />
                     </div>
                     <h1 className='home-services-box-title'>Funeral service</h1>
-                    <p className='home-services-box-description'>Our Funeral Services 
+                    {/* <p className='home-services-box-description'>Our Funeral Services 
                     offer compassionate support during times of loss, preserving 
                     Islamic customs with dignity. We guide families through the 
                     process, providing solace and respectful handling of their 
                     loved ones.
-                    </p>
+                    </p> */}
                     <Link to="/services" className='button learn-more' onClick={scrollToServices}>Learn More</Link>
                 </div>
             </div>

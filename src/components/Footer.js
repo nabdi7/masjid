@@ -50,7 +50,7 @@ const Footer = () => {
 
             </div>
             <div className="copyright">
-                    <p>©{new Date().getFullYear()} Masjid Al Huda. All Rights Reserved.</p>
+                    <p>Designed by Quality Designs || ©{new Date().getFullYear()} Masjid Al Huda. All Rights Reserved.</p>
             </div>
             
         </footer>

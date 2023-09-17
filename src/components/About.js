@@ -2,7 +2,7 @@ import React from "react";
 import "./About.css";
 // import img1 from '../images/front.jpeg';
 import img1 from '../images/front.jpeg';
-import img2 from '../images/main.jpg';
+import img2 from '../images/pic1.jpg';
 import boardImage1 from '../images/board2.jpg'
 
 const About = () => {
@@ -20,7 +20,7 @@ const About = () => {
                     <img src={img1} alt="front masjid" />
                 </div>
                 <div className='about-text'>
-                    <p>
+                    <p className='about-description'>
                         Al Huda Mosque is a non-profit organization dedicated 
                         to serving the Muslim community in Kent, Washington. 
                         Established in 2007, our mission is to provide a welcoming 
@@ -72,6 +72,7 @@ const About = () => {
                         <p className="board-member__subtitle">Treasurer</p>
                     </div>
                 </div>
+                {/*
                 <div className="board-member">
                     <div className="board-member__image">
                         <img src={boardImage1} alt="Founder" />
@@ -80,7 +81,7 @@ const About = () => {
                         <h3 className="board-member__title">Sheikh Ahmed Nuur</h3>
                         <p className="board-member__subtitle">Treasurer</p>
                     </div>
-                </div>
+                </div> */}
             </div>
       </section>
 

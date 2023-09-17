@@ -1,7 +1,7 @@
 import React from "react";
 import "./Prayer.css";
 import img1 from '../images/pic9.webp';
-import img2 from '../images/main.jpg';
+import img2 from '../images/pic1.jpg';
 
 const Prayer = () => {
   return (

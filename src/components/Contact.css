@@ -1,4 +1,3 @@
-/* Reset some default styles */
 * {
     margin: 0;
     padding: 0;
@@ -35,10 +34,10 @@ body {
 
 div {
     display: block;
-  }
+}
   
 .contact-page {
-    max-width: fit-content; /* Increase the max-width to 800px */
+    max-width: fit-content; 
     margin: 0 auto;
     padding: 40px;
 }
@@ -50,29 +49,18 @@ div {
     position: relative; /* Add relative positioning */
 }
   
-.contact-page h2::after {
-    content: "";
-    display: block;
-    width: 60px; /* Adjust the width as needed */
-    height: 3px; /* Adjust the height as needed */
-    background-color: #038000;
-    position: absolute;
-    bottom: -15px; /* Adjust the distance from the heading */
-    left: 50%; /* Center the line horizontally */
-    transform: translateX(-50%); /* Center the line horizontally */
-}
 .contact-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 40px;
-    max-width: 1200px; /* Adjust the maximum width as needed */
+    max-width: 100%; /* Adjust the maximum width as needed */
     margin: 0 auto; /* Center the container horizontally */
   }
 
-  .contact-left {
+.contact-left {
     flex-basis: calc(40% - 20px); /* Adjust the width as needed */
-  }
+}
   
 .contact-information a {
     text-decoration: none;
@@ -101,7 +89,7 @@ div {
     border: 1px solid #ffffff;
     box-shadow: 0px 0px 47px 0px #f0ebeb;
     height: auto;
-    padding: 20px; /* Add padding for space */
+    padding: 30px; /* Add padding for space */
 }
   
 .contact-icons {
@@ -137,7 +125,7 @@ div {
 .contact-form {
     flex-basis: 60%; /* this makes it bigger: later make 60% */
     margin-bottom: 0;
-    padding: 60px; /* make it 60 */
+    padding: 80px; /* make it 60 */
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0px 0px 47px 0px #f0ebeb;
