@@ -4,15 +4,16 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-top: 2rem;
 }
 
+/* Styles for the description */
 .donate-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    margin-top: 2rem;
     flex-direction: column; /* Change to column to stack elements vertically */
+    margin-top: 2rem;
 }
 
 .donate-title {
@@ -27,18 +28,22 @@
     display: flex;
     justify-content: center; /* Center QR codes horizontally */
     align-items: center;
-    flex-wrap: wrap; /* Allow them to wrap to the next row on smaller screens */
-    padding-left: 4rem;
     margin-top: 1rem; /* Add some space between the title and QR codes */
     margin-bottom: 2rem;
-    max-width: 90%;
 }
 
 .qr-code {
-    flex: 1; 
+    flex: 0 0 calc(33.33% - 20px); /* Three boxes in a row with 20px spacing */
     text-align: center;
     padding: 1rem;
+    border: 1px solid #e0e0e0;
     border-radius: 5px;
+    margin: 0 10px; /* Adjust spacing between boxes */
+}
+
+.pay-icon {
+    font-size: 2rem; /* Increase icon size */
+    color: #038000;
 }
 
 .qr-code h1 {
@@ -46,6 +51,6 @@
 }
 
 .qr-code img {
-    max-width: 30%;
+    max-width: 20%; /* Make the QR code image smaller */
     height: auto;
 }
