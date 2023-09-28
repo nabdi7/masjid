@@ -12,45 +12,73 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; /* Change to column to stack elements vertically */
+    flex-direction: column;
     margin-top: 2rem;
 }
-
+/* .quote {
+    font-family: "Montserrat";
+    font-size: 28px;
+    margin-bottom: 1rem;
+} */
 .donate-title {
     font-family: "Montserrat";
     color: #038000;
     font-size: 28px;
     text-align: center;
-    margin-bottom: 1rem; /* Add margin to separate the title from QR codes */
+    margin-bottom: 1rem;
 }
 
 .donate-scan {
-    display: flex;
-    justify-content: center; /* Center QR codes horizontally */
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    justify-content: center;
     align-items: center;
-    margin-top: 1rem; /* Add some space between the title and QR codes */
+    margin-top: 1rem;
     margin-bottom: 2rem;
 }
 
+.qr-container {
+    width: 350px; 
+    text-align: center;
+    padding: 1rem;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
 .qr-code {
-    flex: 0 0 calc(33.33% - 20px); /* Three boxes in a row with 20px spacing */
     text-align: center;
     padding: 1rem;
     border: 1px solid #e0e0e0;
     border-radius: 5px;
-    margin: 0 10px; /* Adjust spacing between boxes */
 }
 
 .pay-icon {
-    font-size: 2rem; /* Increase icon size */
+    font-size: 2.5rem; 
     color: #038000;
 }
 
 .qr-code h1 {
     font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.qr-code p {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .qr-code img {
-    max-width: 20%; /* Make the QR code image smaller */
+    max-width: 20%; 
     height: auto;
+}
+
+@media (max-width: 768px) {
+    .donate {
+        margin: 1rem;
+    }
+
+    .donate-scan {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }

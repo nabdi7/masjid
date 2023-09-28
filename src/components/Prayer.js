@@ -25,7 +25,7 @@ const Prayer = () => {
           <iframe 
           src="https://timing.athanplus.com/masjid/widgets/embed?theme=1&masjid_id=0Lbp1Ndo&color=038000" 
           type="text/html" 
-          width="1000" 
+          width="500" 
           height="560" 
           frameborder="0" 
           allowtransparency="true"

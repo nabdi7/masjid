@@ -11,7 +11,7 @@ import backCover from '../images/pic1.jpg';
 
 const Home = () => {
     const navigate = useNavigate();
-    
+     
     const scrollToAbout = (event) => {
         event.preventDefault();
         navigate('/services');
@@ -68,7 +68,7 @@ const Home = () => {
                     <div className='home-icons'>
                         <FontAwesomeIcon icon={faPeopleGroup} style={{color: "#038000",}} />
                     </div>
-                    <h1 className='home-services-box-title'>Halaqas</h1>
+                    <h1 className='home-services-box-title'>Halaqa Program</h1>
                     {/* <p className='home-services-box-description'>Join our Halaqas for 
                     spiritual growth and community connection. These engaging 
                     sessions explore various aspects of Islamic knowledge, 

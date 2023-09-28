@@ -15,9 +15,9 @@ const Donate = () => {
         </div>
         <section className="donate">
             <div className='donate-container'>
-                {/* <h1 className='donate-title'>Donation</h1> */}
-                <p>Whoever builds a masjid for the sake of Allah, 
-                    Allah will build for him a house like it in paradise 
+                <p className="quote">"Whoever builds a masjid for the sake of Allah, 
+                    Allah will build for him a house like it in paradise". 
+                    (Sahih al-Bukhari 450)
                 </p>
             </div>
 
@@ -56,7 +56,6 @@ const Donate = () => {
                         <p>alhuda@masjid.com</p>
                     </div>
                 </div>
-
             </div>
             
         </section>
