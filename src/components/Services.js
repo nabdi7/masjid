@@ -102,7 +102,7 @@ const Services = () => {
           <div className='services-section'>
             <div className='services-box'>
                 <div className='icons'>
-                    <RiParentFill />
+                    <RiParentFill style={{color: "#038000",}} />
                 </div>
               <h2 className='services-box-title'>Parental Support</h2>
               <p className='services-description'>We offer confidential

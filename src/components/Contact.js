@@ -60,14 +60,15 @@ const Contact = () => {
                         </div>
                     </div>
                     <div className='whatsapp'>
-                        <h1> Join our whatsApp group</h1>
+                        <p className='whatsapp-title'> Join our whatsApp group</p>
                         <img src={whatsApp} alt="Masjid" className='whatsapp-code' />
+                        <div className='socials'>
+                            <a href="https://www.instagram.com/qd_designs/" target="_blank" rel="noopener noreferrer"><BsInstagram /></a>
+                            <a href="https://www.facebook.com/people/Quality-Designs/61550453621801/?mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a>
+                            <a href="https://twitter.com/Qd_designs/" target="_blank" rel="noopener noreferrer"><BsTwitter /></a>
+                        </div>
                     </div>
-                    <div className='socials'>
-                        <a href="https://www.instagram.com/qd_designs/" target="_blank" rel="noopener noreferrer"><BsInstagram /></a>
-                        <a href="https://www.facebook.com/people/Quality-Designs/61550453621801/?mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a>
-                        <a href="https://twitter.com/Qd_designs/" target="_blank" rel="noopener noreferrer"><BsTwitter /></a>
-                    </div>
+                    
                 </div>
                 <div className='contact-right'>
                     <div className='contact-form'>
