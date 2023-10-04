@@ -1,15 +1,17 @@
 .services {
     padding: 2rem;
+    max-width: 100%;
+    background-color: #F5F5F5;
 }
 
 .services-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: flex-start; /* Align sections to the top */
+    align-items: flex-start;
     max-width: 90%;
     margin: 2rem auto;
-    position: relative; /* Make the container relative for positioning */
+    position: relative; 
     margin-top: 6rem;
 }
 
@@ -23,16 +25,21 @@
 .services-box:nth-child(even) {
     background-color: #ffffff;
 }
+.services-box:nth-child(odd) {
+    background-color: #ffffff;
+}
 
 .services-box {
     flex: 1;
     padding: 1rem;
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: 30px;
 }
 
 .icons {
     font-size: 2rem;
     margin-bottom: 1rem;
+    margin-top: 0.5rem;
 }
 
 .services-box-title {
@@ -47,6 +54,7 @@
     font-size: 22px;
     margin-bottom: 1rem;
     flex: 1;
+  
 }
 .button {
     margin-top: 1rem;
