@@ -1,17 +1,15 @@
 .background-image {
-    background-image: url("../images/main.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 60vh;
-    background-position: center;
-    padding-top: 4rem;
+    background-position: right center; 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     color: white;
-    padding-left: 4rem;
+    transition: background-image 0.5s ease-in-out, background-position 5s linear; /* Add a transition for smoother image changes */
 }
 
 .title {
@@ -56,6 +54,12 @@
     transform: scale(0.95);
 }
 
+.small-title {
+    font-family: "Montserrat";
+    font-size: 40px;
+    margin-bottom: 1rem;
+}
+
 .home-services {
     padding: 3rem 0;
     display: flex;
@@ -71,14 +75,14 @@
 .home-services-title {
     font-family: "Montserrat";
     color: #038000;
-    font-size: 22px; /* Adjusted font size */
-    margin-bottom: 0rem; /* Reduced margin */
+    font-size: 22px; 
+    margin-bottom: 0rem; 
 }
 
 .home-services-description {
     font-family: "Montserrat";
     font-size: 28px;
-    margin-bottom: 1rem; /* Increased margin */
+    margin-bottom: 1rem;
 }
 
 .home-services-container {
@@ -163,7 +167,7 @@
 }
 .gallery-box {
     flex: 0 0 calc(50% - 0.5rem); 
-    margin-bottom: 1rem; /* Reduced margin between images */
+    margin-bottom: 1rem; 
     margin-right: 0.5rem;
     box-sizing: border-box;
 }
@@ -187,7 +191,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    /* margin-top: 2rem; */
 }
 
 .masjid-everyone-title {
@@ -199,6 +202,7 @@
 .masjid-everyone-description {
     font-family: "Montserrat";
     font-size: 20px;
+    margin-top: 1rem;
     margin-bottom: 2rem;
 }
 
@@ -212,22 +216,22 @@
     transition: all 0.3s ease;
     text-decoration: none;
     justify-content: center;
-    font-family: Montserrat;
+    font-family: "Montserrat";
     background-color: #038000;
     color: white;
 }
 
 @media (max-width: 768px) {
     .background-image {
-        padding-left: 2rem; /* Adjusted padding for smaller screens */
+        padding-left: 2rem; 
     }
 
     .title {
-        font-size: 40px; /* Adjusted font size for smaller screens */
+        font-size: 40px; 
     }
     .button.learn-more {
-        padding: 0.3rem 0.7rem; /* Adjusted padding for smaller screens */
-        font-size: 0.9rem; /* Adjusted font size for smaller screens */
+        padding: 0.3rem 0.7rem; 
+        font-size: 0.9rem;
     }
     .services-title {
         font-size: 20px;

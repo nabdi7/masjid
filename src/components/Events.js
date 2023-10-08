@@ -58,6 +58,14 @@ const Events = () => {
           ))}
         </ul>
       </section>
+
+      <section className='class-time'>
+        <h2>Dugsi Times</h2>
+        <ul>
+          <li>Monday - Thursday: 5:00pm - 7:00pm</li>
+          <li>Saturday - Sunday: 10:00am - 1:00pm</li>
+        </ul>
+      </section>
     </>
   );
 };
