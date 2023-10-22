@@ -33,7 +33,7 @@ const Navbar = () => {
             <li><Link to="/events">Events</Link></li>
             <li>
               <Link to="#">More</Link>
-              <ul>
+              <ul className='more-dropdown'>
                 <li><Link to="/prayer">Prayer Times</Link></li>
                 <li><Link to="/contact">Contact Us</Link></li>
               </ul>

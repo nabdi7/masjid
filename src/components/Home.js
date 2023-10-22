@@ -102,7 +102,7 @@ const Home = () => {
 
         {/* friday prayer times */}
         <section className='prayer'>
-            
+            {/* top banner */}
 
 
         </section>

@@ -50,7 +50,7 @@ const Footer = () => {
 
             </div>
             <div className="copyright">
-                    <p>Made by <a href="https://qualitydesigns.site/" target="_blank" rel="noopener noreferrer" style={{ color: 'black', fontWeight: 'bold'}}>Quality Designs</a> || ©{new Date().getFullYear()} Masjid Al Huda. All Rights Reserved.</p>
+                    <p>Made by <a href="https://qualitydesigns.site/" target="_blank" rel="noopener noreferrer" style={{ color: 'black', fontWeight: 'bold'}}>Quality Designs</a> || ©{new Date().getFullYear()} Masjid Al Huda.</p>
             </div>
             
         </footer>

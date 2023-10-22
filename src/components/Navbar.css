@@ -74,6 +74,24 @@ body {
     text-decoration: none;
 }
 
+.more-dropdown {
+    position: relative;
+    z-index: 2; 
+}
+
+.more-dropdown ul {
+    width: 150px; 
+    padding: 10px; 
+}
+
+.more-dropdown li {
+    height: auto; 
+}
+
+.more-dropdown a {
+    padding: 5px 10px; 
+}
+
 li a.active {
     color: white;
 }
@@ -98,38 +116,40 @@ li a.active {
 }
 
 @media screen and (max-width: 768px) {
-    .Navbar {
-      justify-content: space-between;
-    }
-  
-    .brand-logo .logo {
-      display: block;
-    }
-  
-    .navbar-links ul {
-      display: none;
-    }
-  
-    .hamburger-menu {
-      display: block;
-    }
-  
-    .mobile-menu-open .navbar-links ul {
-      display: flex;
-    }
-    .bar {
-        display: flex;
-    }
+    .navbar-links {
+        display: none; /* Hide the menu by default on mobile screens */
+      }
     
-    .close-menu-icon {
-        display: none;
-    }
+      .navbar-links ul {
+        flex-direction: column; /* Display the menu items vertically */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #fff; /* Add a background color to the dropdown */
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        display: none; /* Hide the dropdown by default on mobile screens */
+        z-index: 5;
+      }
     
-    .mobile-menu-open .close-menu-icon {
-        display: block;
-    }
+      .brand-logo .logo {
+        display: block; /* Show the logo on mobile screens */
+        text-align: center; /* Center-align the logo */
+      }
     
-    .mobile-menu-open .bar {
-        display: none;
-    }
+      .hamburger-menu {
+        display: block; /* Display the open button for mobile screens */
+      }
+    
+      .mobile-menu-open .navbar-links {
+        display: block; /* Show the menu when the open button is clicked */
+      }
+    
+      .mobile-menu-open .bar {
+        display: none; /* Hide the bar icon when the menu is open */
+      }
+    
+      .mobile-menu-open .close-menu-icon {
+        display: block; /* Display the close icon when the menu is open */
+      }
 }
