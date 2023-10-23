@@ -1,145 +1,143 @@
-/* Styles for the title background */
-.title-background {
-    position: relative;
-    background-color: #f7f7f7;
-    text-align: center;
-    padding: 20px 0;
-  }
-  
-  .masjid-image {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  h1 {
-    font-size: 28px;
-  }
-  
-  /* Styles for the calendar */
-  .calendar {
-    margin: 20px auto;
-    max-width: 600px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Style the days of the week */
-  .calendar-header {
-    display: flex;
-    background-color: #333;
-    color: #fff;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    justify-content: space-between;
-    border-bottom: 1px solid #ccc;
-  }
-  
-  .prev-month,
-  .next-month {
-    font-size: 24px;
-    cursor: pointer;
-    margin: 0 10px;
-  }
-  
-  .prev-month {
-    margin-left: 0;
-  }
-  
-  .next-month {
-    margin-right: 0;
-  }
-  
-  .month-year {
-    font-size: 24px;
-    margin: 0;
-    text-align: center;
-    flex: 1;
-    border-left: 1px solid #ccc;
-  }
-  
-  /* Add lines between columns */
-  .calendar-days {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-gap: 1px;
-    border-top: 1px solid #ccc;
-  }
-  
-  /* Style the individual day cells */
-  .calendar-cell {
-    text-align: center;
-    padding: 10px;
-    cursor: pointer;
-    border-right: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-  }
-  
-  /* Style the last column and last row */
-  .calendar-cell:last-child {
-    border-right: none;
-  }
-  
-  /* .calendar-cell:nth-child(7n) {
-    border-bottom: none;
-  } */
-  
-  .selected {
-    background-color: #007bff;
-    color: #fff;
-  }
-  
-  /* Styles for selected day events */
-  .selected-day-events {
-    margin: 20px auto;
-    max-width: 600px;
-    padding: 20px;
-    background-color: #f7f7f7;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .selected-day-events h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  .selected-day-events h3 {
-    font-size: 20px;
-    margin-top: 0;
-  }
-  
-  .selected-day-events h4 {
-    font-size: 18px;
-    margin-top: 0;
-  }
-  
-  /* Styles for class time */
-  .class-time {
-    margin: 20px auto;
-    max-width: 600px;
-    padding: 20px;
-    background-color: #f7f7f7;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .class-time h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  li {
-    font-size: 16px;
-    margin-bottom: 10px;
-  }
-  
+h1 {
+  font-size: 28px;
+}
+
+/* Styles for the calendar and events container */
+.calendar-and-events-container {
+  display: flex;
+  justify-content: center; 
+  flex-wrap: wrap;
+  margin: 0;
+  margin-top: 1rem;
+}
+
+/* Styles for the calendar */
+.calendar {
+  margin-right: 4px;
+  flex: 1;
+  max-width: 600px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the days of the week */
+.calendar-header {
+  display: flex;
+  background-color: #333;
+  color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+}
+
+.prev-month,
+.next-month {
+  font-size: 24px;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.prev-month {
+  margin-left: 0;
+}
+
+.next-month {
+  margin-right: 0;
+}
+
+.month-year {
+  font-size: 24px;
+  margin: 0;
+  text-align: center;
+  flex: 1;
+  border-left: 1px solid #ccc;
+}
+
+/* Add lines between columns */
+.calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 1px;
+  border-top: 1px solid #ccc;
+}
+
+/* Style the individual day cells */
+.calendar-cell {
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Style the last column and last row */
+.calendar-cell:last-child {
+  border-right: none;
+}
+
+.selected {
+  background-color: #038000;
+  color: #fff;
+}
+
+/* Styles for selected day events */
+.selected-day-events {
+  margin-left: 4px;
+  flex: 1;
+  max-width: 600px;
+  padding: 20px;
+  background-color: #038000;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.selected-day-events h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.selected-day-events h3 {
+  font-size: 20px;
+  margin-top: 0;
+}
+
+.selected-day-events h4 {
+  font-size: 18px;
+  margin-top: 0;
+}
+
+/* Styles for class time */
+.class-time {
+  margin: 20px auto;
+  max-width: 600px;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.class-time h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+
+}

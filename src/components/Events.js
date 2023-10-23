@@ -3,7 +3,6 @@ import "./Events.css";
 import img2 from '../images/pic1.jpg';
 
 const Events = () => {
-  // Function to get the current date in 'YYYY-MM-DD' format
   const getCurrentDate = () => {
     const today = new Date();
     return `${today.getFullYear()}-${(today.getMonth() + 1)
@@ -14,17 +13,13 @@ const Events = () => {
   const [selectedDate, setSelectedDate] = useState(getCurrentDate());
   const [currentDate, setCurrentDate] = useState(new Date());
 
-  // Function to update the current date
   const updateCurrentDate = () => {
     setCurrentDate(new Date());
     setSelectedDate(getCurrentDate());
   };
 
   useEffect(() => {
-    // Update the current date every minute
     const intervalId = setInterval(updateCurrentDate, 60000);
-
-    // Clear the interval on unmount
     return () => clearInterval(intervalId);
   }, []);
 
@@ -47,8 +42,9 @@ const Events = () => {
     // Add more events as needed
   ]);
 
-  const handleDayClick = (date) => {
-    setSelectedDate(date);
+  const handleDayClick = (year, month, day) => {
+    const clickedDate = `${year}-${month}-${day}`;
+    setSelectedDate(clickedDate);
   };
 
   const nextMonth = () => {
@@ -65,14 +61,29 @@ const Events = () => {
 
   const daysOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
+  const currentMonthName = currentDate.toLocaleString("default", { month: "long" });
+
+  const formatDay = (day) => {
+    if (day === 1 || day === 21 || day === 31) {
+      return `${day}st`;
+    } else if (day === 2 || day === 22) {
+      return `${day}nd`;
+    } else if (day === 3 || day === 23) {
+      return `${day}rd`;
+    } else {
+      return `${day}th`;
+    }
+  };
+
   return (
     <>
       <div className="title-background">
         <img src={img2} alt="Masjid" className="masjid-image" />
         <h1>Upcoming Events</h1>
       </div>
-      <section className="Events">
-        <div className="calendar">
+
+      <div className="calendar-and-events-container">
+        <section className="calendar">
           <div className="calendar-header">
             <button className="prev-month" onClick={prevMonth}>
               &lt;
@@ -97,31 +108,31 @@ const Events = () => {
                 className={`calendar-cell ${
                   day === parseInt(selectedDate.split("-")[2]) ? "selected" : ""
                 }`}
-                onClick={() => handleDayClick(`2023-10-${day}`)}
+                onClick={() => handleDayClick(currentDate.getFullYear(), currentDate.getMonth() + 1, day)}
               >
                 {day}
               </div>
             ))}
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section className="selected-day-events">
-        <h2>Event Details</h2>
-        {selectedDate && (
-          <div>
-            <h3>{selectedDate}</h3>
-            {eventsData.map((event) =>
-              event.date === selectedDate ? (
-                <div key={event.title}>
-                  <h4>{event.title}</h4>
-                  <p>{event.description}</p>
-                </div>
-              ) : null
-            )}
-          </div>
-        )}
-      </section>
+        <section className="selected-day-events">
+          <h2>Events for {currentMonthName}</h2>
+          {selectedDate && (
+            <div>
+              <h3>{formatDay(parseInt(selectedDate.split("-")[2]))}</h3>
+              {eventsData.map((event) =>
+                event.date === selectedDate ? (
+                  <div key={event.title}>
+                    <h4>{event.title}</h4>
+                    <p>{event.description}</p>
+                  </div>
+                ) : null
+              )}
+            </div>
+          )}
+        </section>
+      </div>
 
       <section className="class-time">
         <h2>Dugsi Times</h2>
