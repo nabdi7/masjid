@@ -54,7 +54,7 @@ h1 {
   margin: 0;
   text-align: center;
   flex: 1;
-  border-left: 1px solid #ccc;
+  /* border-left: 1px solid #ccc; */
 }
 
 /* Add lines between columns */
@@ -112,6 +112,10 @@ h1 {
   margin-top: 0;
 }
 
+.event-item {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
 /* Styles for class time */
 .class-time {
   margin: 20px auto;

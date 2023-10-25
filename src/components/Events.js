@@ -27,19 +27,23 @@ const Events = () => {
     {
       date: "2023-10-15",
       title: "Stories of the prophets",
-      description: "A lecture on the stories of the prophets.",
+      description: "5pm - 7pm",
     },
     {
       date: "2023-10-20",
       title: "Quran tafsir",
-      description: "Tafsir of Quranic verses.",
+      description: "6pm - 8pm",
     },
     {
       date: "2023-10-24",
       title: "Halaqah",
-      description: "Group discussion on religious topics.",
+      description: "4:30pm - 6:30pm",
     },
-    // Add more events as needed
+    {
+      date: "2023-10-24",
+      title: "Quran program",
+      description: "12:30pm - 3:30pm",
+    },
   ]);
 
   const handleDayClick = (year, month, day) => {
@@ -120,25 +124,39 @@ const Events = () => {
           <h2>Events for {currentMonthName}</h2>
           {selectedDate && (
             <div>
-              <h3>{formatDay(parseInt(selectedDate.split("-")[2]))}</h3>
-              {eventsData.map((event) =>
-                event.date === selectedDate ? (
+              {eventsData
+                .filter((event) => event.date === selectedDate)
+                .map((event, index, filteredEvents) => (
                   <div key={event.title}>
-                    <h4>{event.title}</h4>
-                    <p>{event.description}</p>
+                    {index === 0 && ( 
+                      <div className="event-item">
+                        <h3>{formatDay(parseInt(selectedDate.split("-")[2]))}</h3>
+                        <hr /> 
+                      </div>
+                    )}
+                    <div className="event-item">
+                      <h4>{event.title}</h4>
+                      <p>{event.description}</p>
+                    </div>
+                    {index < filteredEvents.length - 1 && <hr />} 
                   </div>
-                ) : null
+                ))}
+              {eventsData.filter((event) => event.date === selectedDate).length === 0 && (
+                <div className="event-item">
+                  <h3>{formatDay(parseInt(selectedDate.split("-")[2]))}</h3>
+                </div>
               )}
             </div>
           )}
         </section>
+
       </div>
 
       <section className="class-time">
-        <h2>Dugsi Times</h2>
+        <h2> Quran Program</h2>
         <ul>
           <li>Monday - Thursday: 5:00pm - 7:00pm</li>
-          <li>Saturday - Sunday: 10:00am - 1:00pm</li>
+          <li>Saturday - Sunday: 10:00am - 2:00pm</li>
         </ul>
       </section>
     </>
