@@ -23,7 +23,29 @@ const Events = () => {
     return () => clearInterval(intervalId);
   }, []);
 
+  const generateFridays = (year, month) => {
+    const dates = [];
+    const date = new Date(year, month - 1, 1);
+    while (date.getMonth() === month - 1) {
+      if (date.getDay() === 5) {
+        const formattedDate = `${date.getFullYear()}-${(date.getMonth() + 1).toString().padStart(2, "0")}-${date.getDate().toString().padStart(2, "0")}`;
+        dates.push({
+          date: formattedDate,
+          title: "Jummah Prayer",
+          description: "Prayer at 1:30pm",
+        });
+      }
+      date.setDate(date.getDate() + 1);
+    }
+    return dates;
+  };
+
   const [eventsData, setEventsData] = useState([
+    {
+      date: "2023-10-6",
+      title: "Jummah Prayer",
+      description: "Prayer at 2pm", 
+    },
     {
       date: "2023-10-15",
       title: "Stories of the prophets",
@@ -44,6 +66,7 @@ const Events = () => {
       title: "Quran program",
       description: "12:30pm - 3:30pm",
     },
+    ...generateFridays(2023, currentDate.getMonth() + 1),
   ]);
 
   const handleDayClick = (year, month, day) => {
@@ -149,7 +172,6 @@ const Events = () => {
             </div>
           )}
         </section>
-
       </div>
 
       <section className="class-time">
