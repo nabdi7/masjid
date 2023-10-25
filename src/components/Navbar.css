@@ -1,155 +1,162 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:wght@100&display=swap');
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-  
+
 body {
-    margin: 0;
-    padding: 0;
-    font-family: "Montserrat";
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
 }
 
 .Navbar {
-    background-color: #fff;
-    padding: 0 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.brand-logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.brand-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.brand-logo .logo{
-    width: fit-content;
-    height: fit-content;
-    margin: 0.5rem;
-    font-weight: 500;
-    color: #000;
+.brand-logo .logo {
+  width: fit-content;
+  height: fit-content;
+  margin: 0.5rem;
+  font-weight: 500;
+  color: #000;
 }
 
-.navbar-links ul{
-    margin: 0;
-    width: 100%;
-    padding: 0; 
-    display: flex; 
-    text-align: center; 
+.navbar-links ul {
+  margin: 0;
+  width: 100%;
+  padding: 0;
+  display: flex;
+  text-align: center;
 }
 
 .navbar-links li {
-    text-decoration: none; 
-    color: #000;
-    padding: 1rem; 
-    display: block; 
-    position: relative;
+  text-decoration: none;
+  color: #000;
+  padding: 1rem;
+  display: block;
+  position: relative;
 }
 
-.navbar-links li ul{
-    background-color: #fff;
-    max-height: 240px;
-    width: 100%;
-    margin: 0 auto; 
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 2px;
-    display: none;
-    position: absolute; 
-    top: 100%;
-    left: 0;
+.navbar-links li ul {
+  background-color: #fff;
+  max-height: 240px;
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 2px;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
 }
 
 .navbar-links li:hover ul {
-    display: block;
+  display: block;
 }
 
-.navbar-links a{
-    display: inline-block;
-    padding: 1rem;
-    color: #000;
-    text-decoration: none;
+.navbar-links a {
+  display: inline-block;
+  padding: 1rem;
+  color: #000;
+  text-decoration: none;
 }
 
 .more-dropdown {
-    position: relative;
-    z-index: 2; 
+  position: relative;
+  z-index: 2;
 }
 
 .more-dropdown ul {
-    width: 150px; 
-    padding: 10px; 
+  width: 150px;
+  padding: 10px;
 }
 
 .more-dropdown li {
-    height: auto; 
+  height: auto;
 }
 
 .more-dropdown a {
-    padding: 5px 10px; 
+  padding: 5px 10px;
 }
 
 li a.active {
-    color: white;
+  color: white;
 }
 
 .active {
-    background-color: #038000;
-    color: black;
-    border-radius: 1311.188px;
-    box-shadow: 0px 6.5625px 21px 0px;
+  background-color: #038000;
+  color: black;
+  border-radius: 1311.188px;
+  box-shadow: 0px 6.5625px 21px 0px;
 }
 
-.navbar-links li a:hover{
-    color: black;
+.navbar-links li a:hover {
+  color: black;
 }
 
 .hamburger-menu {
-    display: none;
+  display: none;
 }
 
 .close-menu-icon {
-    display: none;
+  display: none;
 }
 
 @media screen and (max-width: 768px) {
     .navbar-links {
-        display: none; /* Hide the menu by default on mobile screens */
-      }
-    
-      .navbar-links ul {
-        flex-direction: column; /* Display the menu items vertically */
-        position: absolute;
-        top: 100%;
-        left: 0;
-        background-color: #fff; /* Add a background color to the dropdown */
-        border: 1px solid #ccc;
-        border-radius: 10px;
-        display: none; /* Hide the dropdown by default on mobile screens */
-        z-index: 5;
-      }
-    
-      .brand-logo .logo {
-        display: block; /* Show the logo on mobile screens */
-        text-align: center; /* Center-align the logo */
-      }
-    
-      .hamburger-menu {
-        display: block; /* Display the open button for mobile screens */
-      }
-    
-      .mobile-menu-open .navbar-links {
-        display: block; /* Show the menu when the open button is clicked */
-      }
-    
-      .mobile-menu-open .bar {
-        display: none; /* Hide the bar icon when the menu is open */
-      }
-    
-      .mobile-menu-open .close-menu-icon {
-        display: block; /* Display the close icon when the menu is open */
-      }
-}
+      display: none;
+      background-color: #ccc;
+    }
+  
+    .navbar-links.open {
+      display: flex;
+      flex-direction: column; /* Display the menu items vertically when open */
+      align-items: center;
+      position: absolute;
+      top: 10%; /* Position the menu below the logo */
+    }
+  
+    .navbar-links ul {
+      flex-direction: column; /* Display the menu items vertically */
+    }
+  
+    .navbar-links li {
+      padding: 1rem;
+      display: block;
+    }
+  
+    .brand-logo .logo {
+      display: block;
+      text-align: center;
+    }
+  
+    .hamburger-menu {
+      display: block;
+    }
+  
+    .mobile-menu-open .navbar-links {
+      display: flex;
+    }
+  
+    .mobile-menu-open .bar {
+      display: none;
+    }
+  
+    .mobile-menu-open .close-menu-icon {
+      display: block;
+    }
+  }
+  
