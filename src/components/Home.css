@@ -12,7 +12,7 @@
     transition: background-image 0.5s ease-in-out, background-position 5s linear; /* Add a transition for smoother image changes */
 }
 
-.title {
+.title{
     font-family: "Montserrat";
     font-size: 59px;
     margin-bottom: 1rem;
@@ -47,7 +47,7 @@
   
 .background-image .button.home-button:hover {
     background-color: #038000;
-    color: white;
+    color: black;
 }
   
 .background-image .button:active {
@@ -75,13 +75,13 @@
 .home-services-title {
     font-family: "Montserrat";
     color: #038000;
-    font-size: 22px; 
+    font-size: 30px; 
     margin-bottom: 0rem; 
 }
 
 .home-services-description {
     font-family: "Montserrat";
-    font-size: 28px;
+    font-size: 26px;
     margin-bottom: 1rem;
 }
 
@@ -138,13 +138,14 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-bottom: 3rem;
 }
 
 .gallery-title {
     /* color: #038000; */
     font-family: "Montserrat";
-    font-size: 28px;
-    margin-bottom: 3rem; 
+    font-size: 30px;
+    margin-bottom: 3.5rem; 
     position: relative; 
     display: inline-block; 
 }
@@ -159,22 +160,22 @@
     left: 25%; 
 }
 .gallery-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 1rem;
+    max-width: 80%;
 }
+
 .gallery-box {
-    flex: 0 0 calc(50% - 0.5rem); 
-    margin-bottom: 1rem; 
-    margin-right: 0.5rem;
+    width: 100%; 
+    height: auto; 
     box-sizing: border-box;
 }
 
 .gallery-box img {
-    max-width: 65%; 
+    width: 100%;
     height: auto;
+    padding: 0.4rem;
 }
 .masjid-everyone {
     padding: 4rem 0;
@@ -220,7 +221,10 @@
     background-color: #038000;
     color: white;
 }
-
+.masjid-everyone-button:hover {
+    background-color: #038000;
+    color: black;
+}
 @media (max-width: 768px) {
     .background-image {
         padding-left: 2rem; 
@@ -244,6 +248,10 @@
 
     .gallery-title {
         font-size: 24px;
+    }
+
+    .gallery-container {
+        grid-template-columns: repeat(1, 1fr); 
     }
 
     .masjid-everyone-title {

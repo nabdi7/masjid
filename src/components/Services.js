@@ -2,19 +2,19 @@ import React, { useState } from "react";
 import "./Services.css";
 import { Link, useNavigate } from 'react-router-dom';
 import img2 from '../images/pic1.jpg';
-import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaFacebookF, FaLinkedinIn } from 'react-icons/fa';
+import { FaPhone, FaEnvelope, FaMapMarkerAlt} from 'react-icons/fa';
 import {RiParentFill} from 'react-icons/ri';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBookQuran, faPeopleGroup, faBed, faHeart, faLanguage } from '@fortawesome/free-solid-svg-icons';
 
 const Services = () => {
   const navigate = useNavigate();
-  const [formSubmitted, setFormSubmitted] = useState(false);
-  const [contactMessage, setContactMessage] = useState('');
-  const [name, setName] = useState('');
-  const [phone, setPhone] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+  const [setFormSubmitted] = useState(false);
+  const [setContactMessage] = useState('');
+  const [setName] = useState('');
+  const [setPhone] = useState('');
+  const [setEmail] = useState('');
+  const [setMessage] = useState('');
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -58,7 +58,7 @@ const Services = () => {
                 expert guidance, and a welcoming community. Join us on a
                 journey of spiritual growth and connection with the Quranic
                 teachings.</p>
-              <Link to="/" className='button register' onClick={scrollToServices}>Register</Link>
+              <Link to="#" className='service-button register' onClick={scrollToServices}>Register</Link>
             </div>
             <div className='services-box'>
                 <div className='icons'>
@@ -70,7 +70,7 @@ const Services = () => {
                 through our Arabic Program. Our courses are designed to
                 help you understand the Quran and Hadith in their original
                 language.</p>
-              <Link to="/" className='button register' onClick={scrollToServices}>Register</Link>
+              <Link to="#" className='service-button register' onClick={scrollToServices}>Register</Link>
             </div>
           </div>
           <div className='services-section'>
@@ -157,7 +157,7 @@ const Services = () => {
                 <FaMapMarkerAlt />
               </div>
               <div className='contacted-info'>
-                <a href='https://goo.gl/maps/oQHJCMPBP9Tqk1Tq5'> Kent, WA</a>
+                <a href='https://www.google.com/maps/place/Masjid+Al-Hudaa/@47.3711705,-122.2084218,17z/data=!3m1!4b1!4m6!3m5!1s0x54905eb5bf39c87b:0xd97531dae44de0bb!8m2!3d47.3711705!4d-122.2058469!16s%2Fg%2F11c6rj9270?entry=ttu'> Kent, WA</a>
               </div>
             </div>
           </div>

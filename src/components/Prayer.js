@@ -31,7 +31,6 @@ const Prayer = () => {
           allowtransparency="true"
           ></iframe>
         </div>
-
       </section>
     </>
   );

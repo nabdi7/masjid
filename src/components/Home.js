@@ -4,18 +4,18 @@ import "./Home.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBookQuran, faPeopleGroup, faBed, faHeart } from '@fortawesome/free-solid-svg-icons';
 import slideShow1 from '../images/main.jpg';
-import img1 from '../images/front.jpeg';
 import img2 from '../images/interior2.jpeg';
 import img3 from '../images/interior1.jpeg';
 import img4 from '../images/interior3.jpeg';
 import backCover from '../images/pic1.jpg';
+import fridayPrayer from '../images/man-praying.jpeg'
 
 const Home = () => {
     const navigate = useNavigate();
 
     const scrollToAbout = (event) => {
         event.preventDefault();
-        navigate('/services');
+        navigate('/about');
         window.scrollTo(0, 0);
     };
 
@@ -24,17 +24,27 @@ const Home = () => {
         window.scrollTo(0, 0);
     };
 
+    const scrollToContact = (event) => {
+        navigate('/contact');
+        window.scrollTo(0, 0);
+    };
+
     const imageInfo = [
         {
             image: slideShow1,
-            title: 'Welcome to Al Huda Mosque',
+            title: 'WELCOME TO AL HUDA MOSQUE',
             // title: 'Welcome to Al Huda Islamic Center of Kent',
             subheading: 'In the name of Allah, the most gracious, most merciful.',
         },
         {
             image: backCover,
-            title: '"AND ALLAH INVITES TO THE HOME OF PEACE” Surah Yunus, Verse 25',
-            subheading: 'Al Huda Mosque is a non-profit organization dedicated to serving the Muslim...',
+            title: (
+                <span>
+                    "AND ALLAH INVITES TO THE <br />HOME OF PEACE”
+                </span>
+            ),
+            // subheading: 'Al Huda Mosque is a non-profit organization dedicated to serving the Muslim...',
+            subheading: '(Surah Yunus, Verse 25)',
         },
     ];
 
@@ -46,7 +56,7 @@ const Home = () => {
         }, 4000);
 
         return () => clearInterval(slideshowInterval);
-    }, []);
+    }, );
     
     return (
         <>
@@ -57,7 +67,7 @@ const Home = () => {
                     backgroundImage: `url(${imageInfo[currentImageIndex].image})`,
                     backgroundPosition: 'right center', 
                 }}>
-            <h1 className={`title ${currentImageIndex === 1 ? 'small-title' : ''}`}>
+            <h1 className='title'>
                 {imageInfo[currentImageIndex].title}
             </h1>
             <h1 className='subheading'>{imageInfo[currentImageIndex].subheading}</h1>
@@ -101,19 +111,27 @@ const Home = () => {
         </section>
 
         {/* friday prayer times */}
-        <section className='prayer'>
-            {/* top banner */}
-
-
-        </section>
-
+        {/* <section className='announcement'>
+            <div className='friday-prayer'>
+                <h1>Announcements</h1>
+                <img src={fridayPrayer} alt="" />
+                <div className='right-side'>
+                    <h1>Friday Prayer</h1>
+                    <p>1st Jummah: 1:30 PM</p>
+                    <p>2nd Jummah: 2:00 PM</p>
+                </div>
+            </div>
+        </section> */}
 
         {/* gallery */}
         <section className='gallery'>
             <h1 className='gallery-title'>Our Gallery</h1>
             <div className='gallery-container'>
                 <div className='gallery-box'>
-                    <img src={img1} alt="" />
+                    <img src={img3} alt="" />
+                </div>
+                <div className='gallery-box'>
+                    <img src={img2} alt="" />
                 </div>
                 <div className='gallery-box'>
                     <img src={img2} alt="" />
@@ -123,6 +141,9 @@ const Home = () => {
                 </div>
                 <div className='gallery-box'>
                     <img src={img4} alt="" />
+                </div>
+                <div className='gallery-box'>
+                    <img src={img2} alt="" />
                 </div>
              </div>
         </section>
@@ -136,7 +157,7 @@ const Home = () => {
                     <h1 className='masjid-everyone-title'>A MASJID FOR EVERYONE</h1>
                     <p className='masjid-everyone-description'>A welcoming and 
                     inclusive masjid for everyone, fostering community through volunteering.</p>
-                    <Link to="/about" className='button masjid-everyone-button'>Volunteer</Link>
+                    <Link to="/contact" className='button masjid-everyone-button' onClick={scrollToContact}>Volunteer</Link>
                 </div>
             </div>
         </section>

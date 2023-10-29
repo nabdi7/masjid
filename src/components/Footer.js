@@ -11,6 +11,26 @@ const Footer = () => {
         navigate('/');
         window.scrollTo(0, 0);
     };
+    const scrollToAbout = (event) => {
+        event.preventDefault();
+        navigate('/about');
+        window.scrollTo(0, 0);
+    };
+    const scrollToServices = (event) => {
+        event.preventDefault();
+        navigate('/services');
+        window.scrollTo(0, 0);
+    };
+    const scrollToPrayer = (event) => {
+        event.preventDefault();
+        navigate('/prayer');
+        window.scrollTo(0, 0);
+    };
+    const scrollToContact = (event) => {
+        event.preventDefault();
+        navigate('/contact');
+        window.scrollTo(0, 0);
+    };
     return (
         <>
         <footer className='footer'>
@@ -24,18 +44,18 @@ const Footer = () => {
                 <div className='footer-menu'>
                     <h1 className='menu-title'>Al Huda</h1>
                     <ul>
-                        <li><Link to="/about">About</Link></li>
-                        <li><Link to="/programs">Programs</Link></li>
-                        <li><Link to="/donate">Prayer Times</Link></li>
+                        <li><Link to="/about" onClick={scrollToAbout}>About</Link></li>
+                        <li><Link to="/services" onClick={scrollToServices}>Programs</Link></li>
+                        <li><Link to="/prayer" onClick={scrollToPrayer}>Prayer Times</Link></li>
                     </ul> 
                 </div>
 
                 <div className='footer-menu'>
                     <h1 className='menu-title'>Resources</h1>
                     <ul>
-                        <li><Link to="/donate">Mental help</Link></li>
-                        <li><Link to="/contact">Youth</Link></li>
-                        <li><Link to="/contact">Contact Us</Link></li>
+                        <li><Link to="#">Mental help</Link></li>
+                        <li><Link to="#">Youth</Link></li>
+                        <li><Link to="/contact" onClick={scrollToContact}>Contact Us</Link></li>
                     </ul>
                 </div>
 

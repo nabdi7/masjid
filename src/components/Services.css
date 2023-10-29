@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:wght@100&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
+}
 .services {
     padding: 2rem;
     max-width: 100%;
@@ -54,9 +65,8 @@
     font-size: 22px;
     margin-bottom: 1rem;
     flex: 1;
-  
 }
-.button {
+.service-button {
     margin-top: 1rem;
     padding: 0.5rem 1rem;
     border: 1px solid #038000;
@@ -69,7 +79,7 @@
     font-family: "Montserrat";
 }
 
-.button.register:hover {
+.service-button.register:hover {
     background-color: #038000;
     color: white;
 }
