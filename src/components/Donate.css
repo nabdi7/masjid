@@ -1,3 +1,6 @@
+body {
+    overflow-x: hidden;
+}
 .donate {
     display: flex;
     flex-direction: column;
@@ -15,11 +18,7 @@
     flex-direction: column;
     margin-top: 2rem;
 }
-/* .quote {
-    font-family: "Montserrat";
-    font-size: 28px;
-    margin-bottom: 1rem;
-} */
+
 .donate-title {
     font-family: "Montserrat";
     color: #038000;
@@ -29,17 +28,19 @@
 }
 
 .donate-scan {
+    max-width: 100%;
     display: grid; 
     grid-template-columns: repeat(3, 1fr); 
-    gap: 20px;
+    gap: 10px;
     justify-content: center;
     align-items: center;
     margin-top: 1rem;
     margin-bottom: 2rem;
+    padding: 2rem;
 }
 
 .qr-container {
-    width: 350px; 
+    width: 430px; 
     text-align: center;
     padding: 1rem;
     border-radius: 5px;
@@ -54,22 +55,23 @@
 }
 
 .pay-icon {
-    font-size: 2.5rem; 
+    font-size: 3rem; 
     color: #038000;
 }
 
 .qr-code h1 {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     margin-bottom: 0.5rem;
 }
 
 .qr-code p {
-    margin-top: 0.5rem;
+    font-size: 1.1rem;
+    margin-top: 0.7rem;
     margin-bottom: 0.5rem;
 }
 
 .qr-code img {
-    max-width: 20%; 
+    max-width: 25%; 
     height: auto;
 }
 

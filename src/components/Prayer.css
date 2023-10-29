@@ -24,6 +24,28 @@
   margin-bottom: 30px;
 }
 
+.friday-prayer {
+  background-color: #038000; 
+  color: #fff; 
+  padding: 0.5rem; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.friday-title {
+  font-family: "Montserrat";
+  font-size: 20px;
+  margin: 0.5rem;
+}
+
+.prayer-subtitle {
+  font-family: "Montserrat";
+  font-size: 19px;
+  margin: 0.5rem;
+  color: #000; 
+}
+
 .prayer-widget {
   display: flex;
   flex-direction: column;

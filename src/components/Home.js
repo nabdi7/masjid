@@ -8,7 +8,6 @@ import img2 from '../images/interior2.jpeg';
 import img3 from '../images/interior1.jpeg';
 import img4 from '../images/interior3.jpeg';
 import backCover from '../images/pic1.jpg';
-import fridayPrayer from '../images/man-praying.jpeg'
 
 const Home = () => {
     const navigate = useNavigate();
@@ -109,19 +108,6 @@ const Home = () => {
                 </div>
             </div>
         </section>
-
-        {/* friday prayer times */}
-        {/* <section className='announcement'>
-            <div className='friday-prayer'>
-                <h1>Announcements</h1>
-                <img src={fridayPrayer} alt="" />
-                <div className='right-side'>
-                    <h1>Friday Prayer</h1>
-                    <p>1st Jummah: 1:30 PM</p>
-                    <p>2nd Jummah: 2:00 PM</p>
-                </div>
-            </div>
-        </section> */}
 
         {/* gallery */}
         <section className='gallery'>

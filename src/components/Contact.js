@@ -60,7 +60,7 @@ const Contact = () => {
                         </div>
                     </div>
                     <div className='whatsapp'>
-                        <p className='whatsapp-title'> Join our whatsApp group</p>
+                        <p className='whatsapp-title'> Join our whatsApp </p>
                         <img src={whatsApp} alt="Masjid" className='whatsapp-code' />
                         <div className='socials'>
                             <a href="https://www.instagram.com/qd_designs/" target="_blank" rel="noopener noreferrer"><BsInstagram /></a>
@@ -105,9 +105,9 @@ const Contact = () => {
                         Send Message
                         </button>
                         {formSubmitted && (
-                        <p className='thank-you-message'>
+                        <h6 className='thank-you-message'>
                             We received your inquiry. Thanks!
-                        </p>
+                        </h6>
                         )}
                     </form>
                     </div>

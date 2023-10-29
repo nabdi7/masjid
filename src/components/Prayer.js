@@ -1,16 +1,21 @@
-import React from "react";
+import React, { useState }  from "react";
 import "./Prayer.css";
 import img1 from '../images/pic9.webp';
 import img2 from '../images/pic1.jpg';
 
 const Prayer = () => {
+  // Define the prayer times
+  const [prayerTimes] = useState({
+    firstJummah: '1:30PM',
+    secondJummah: '2:00PM',
+  });
   return (
     <>
       {/* about the masjid */}
       <div className="title-background">
-            <img src={img2} alt="Masjid" className='masjid-image' />
-            <h1>Prayer Times</h1>
-        </div>
+          <img src={img2} alt="Masjid" className='masjid-image' />
+          <h1>Prayer Times</h1>
+      </div>
       <section className='prayer'>
         <div className='prayer-image'>
           <img src={img1} alt="prayer" />
@@ -18,6 +23,13 @@ const Prayer = () => {
         <p>"Indeed, performing prayers is a duty on the believers at 
           the appointed times" (Qur'an 4, Verse 103)</p>
       </section>
+
+      {/* Friday Prayer Times */}
+      <div className='friday-prayer'>
+        <h1 className='friday-title'>Friday Prayer:</h1>
+        <h5 className='prayer-subtitle'>1st Jummah: {prayerTimes.firstJummah}</h5>
+        <h5 className='prayer-subtitle'>2nd Jummah: {prayerTimes.secondJummah}</h5>
+      </div>
 
       {/* Display the prayer times */}
       <section className='prayer-times'>

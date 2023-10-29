@@ -145,5 +145,30 @@ li {
 }
 
 @media screen and (max-width: 768px) {
+  .calendar-and-events-container {
+    flex-direction: column;
+    padding: 1rem; 
+    margin-left: 1rem; 
+    margin-right: 1rem;
+  }
+
+  .calendar {
+    max-width: 100%; 
+    margin: 0; 
+  }
+
+  .selected-day-events {
+    max-width: 100%;
+    margin: 0; 
+  }
+
+  .class-time {
+    padding: 1rem; 
+    margin-left: 2rem; 
+    margin-right: 2rem;
+  }
+
+
+  
 
 }

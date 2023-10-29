@@ -135,6 +135,7 @@ div {
 .whatsapp-code {
     width: 30%;
     height: auto;
+    
 }
 .contact-right {
     flex-basis: calc(35% - 20px); 
@@ -142,13 +143,12 @@ div {
   }
   
 .contact-form {
-    flex-basis: 60%; 
+    flex-basis: 70%; 
     margin-bottom: 0;
-    padding: 65px; 
+    padding: 75px; 
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0px 0px 47px 0px #f0ebeb;
-    
 }
   
 .contact-form h3 {
@@ -190,6 +190,7 @@ textarea {
 .thank-you-message {
     margin-top: 1rem;
     color: green; 
+    font-size: 15px;
 }
 
 

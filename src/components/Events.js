@@ -21,7 +21,7 @@ const Events = () => {
   useEffect(() => {
     const intervalId = setInterval(updateCurrentDate, 60000);
     return () => clearInterval(intervalId);
-  }, []);
+  },);
 
   const generateFridays = (year, month) => {
     const dates = [];
