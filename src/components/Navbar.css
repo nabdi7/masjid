@@ -118,17 +118,19 @@ li a.active {
 @media screen and (max-width: 768px) {
     .navbar-links {
       display: none;
-      background-color: #ccc;
+      background-color: white;
+      z-index: 2;
     }
   
     .navbar-links.open {
       display: flex;
-      flex-direction: column; /* Display the menu items vertically when open */
+      flex-direction: column; /* Displertically when open */
       align-items: center;
       position: absolute;
-      top: 10%; /* Position the menu below the logo */
+      top: 14%; 
+      width: 100%;
     }
-  
+    
     .navbar-links ul {
       flex-direction: column; /* Display the menu items vertically */
     }
@@ -136,6 +138,15 @@ li a.active {
     .navbar-links li {
       padding: 1rem;
       display: block;
+    }
+    .more-dropdown  {
+      position: relative;
+      z-index: 2;
+    }
+    .more-dropdown ul {
+      width: 10px; 
+      max-height: 120px; 
+      padding: 5px;
     }
   
     .brand-logo .logo {

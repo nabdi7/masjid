@@ -12,51 +12,46 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <>
-
-    <nav className={`Navbar ${isMenuOpen ? 'mobile-menu-open' : ''}`}>
-    
-      <div className='brand-logo'>
-        <Link to="/" className='logo'>
-          <img src={logo} width='120px' height='auto' max-width='100%' max-height='100%' alt='Logo' />
-        </Link>
-      </div>
-
-      <div className={`navbar-links ${isMenuOpen ? 'open' : ''}`}>
-        {/* Close icon to hide the menu */}
-        <div className='close-menu-icon' onClick={toggleMenu}>
-          <FontAwesomeIcon icon={faTimes} />
+      <nav className={`Navbar ${isMenuOpen ? 'mobile-menu-open' : ''}`}>
+        <div className='brand-logo'>
+          <Link to="/" className='logo'>
+            <img src={logo} width='120px' height='auto' max-width='100%' max-height='100%' alt='Logo' />
+          </Link>
         </div>
-
-        <ul>
-          <li><Link to="/about">About Us</Link></li>
-          <li><Link to="/services">Programs</Link></li>
-          <li><Link to="/events">Events</Link></li>
-          <li>
-            <Link to="#">More</Link>
-            <ul className='more-dropdown'>
-              <li><Link to="/prayer">Prayer Times</Link></li>
-              <li><Link to="/contact">Contact Us</Link></li>
-            </ul>
-          </li>
-          <li>
-            <Link to="/donate" className='active'>
-              Donate
-            </Link>
-          </li>
-        </ul>
-      </div>
-
-      {/* Hamburger Menu */}
-      <div className={`hamburger-menu ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
-        {/* Bars icon to open the menu */}
-        <div className={`bar ${isMenuOpen ? 'hidden' : ''}`}>
-          <FontAwesomeIcon icon={faBars} />
+        <div className={`navbar-links ${isMenuOpen ? 'open' : ''}`}>
+          <div className='close-menu-icon' onClick={toggleMenu}>
+            <FontAwesomeIcon icon={faTimes} />
+          </div>
+          <ul>
+            <li><Link to="/about" onClick={closeMenu}>About Us</Link></li>
+            <li><Link to="/services" onClick={closeMenu}>Programs</Link></li>
+            <li><Link to="/events" onClick={closeMenu}>Events</Link></li>
+            <li>
+              <Link to="#" onClick={closeMenu}>More</Link>
+              <ul className='more-dropdown'>
+                <li><Link to="/prayer" onClick={closeMenu}>Prayer Times</Link></li>
+                <li><Link to="/contact" onClick={closeMenu}>Contact Us</Link></li>
+              </ul>
+            </li>
+            <li>
+              <Link to="/donate" className='active' onClick={closeMenu}>
+                Donate
+              </Link>
+            </li>
+          </ul>
         </div>
-      </div>
-    </nav>
-    
+        <div className={`hamburger-menu ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
+          <div className={`bar ${isMenuOpen ? 'hidden' : ''}`}>
+            <FontAwesomeIcon icon={faBars} />
+          </div>
+        </div>
+      </nav>
     </>
   );
 };
