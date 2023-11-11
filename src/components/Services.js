@@ -79,12 +79,10 @@ const Services = () => {
                     <FontAwesomeIcon icon={faHeart} style={{ color: '#038000' }} />
                 </div>
               <h2 className='services-box-title'>Marriage Services</h2>
-              <p className='services-description'>We offer confidential
-                counseling services for members of our community who are
-                experiencing personal or family difficulties. Our
-                counseling services are provided by qualified and
-                experienced professionals who are sensitive to the
-                unique needs of the Muslim community.</p>
+              <p className='services-description'>For those seeking marital bliss, 
+              our Marriage Services offer guidance, support, and counseling. 
+              Our experienced professionals are dedicated to assisting couples on 
+              their journey to a harmonious and fulfilling marriage.</p>
             </div>
             <div className='services-box'>
                 <div className='icons'>
@@ -105,24 +103,18 @@ const Services = () => {
                     <RiParentFill style={{color: "#038000",}} />
                 </div>
               <h2 className='services-box-title'>Parental Support</h2>
-              <p className='services-description'>We offer confidential
-                counseling services for members of our community who are
-                experiencing personal or family difficulties. Our
-                counseling services are provided by qualified and
-                experienced professionals who are sensitive to the
-                unique needs of the Muslim community.</p>
+              <p className='services-description'>Our Parental Support services provide 
+              guidance and assistance to parents facing challenges in raising their children. 
+              Our professionals understand the unique needs of Muslim families and offer 
+              support to foster a nurturing and positive environment for children.</p>
             </div>
             <div className='services-box'>
                 <div className='icons'>
                     <FontAwesomeIcon icon={faBed} style={{color: "#038000",}} />
                 </div>
               <h2 className='services-box-title'>Funeral Services</h2>
-              <p className='services-description'>We offer confidential
-                counseling services for members of our community who are
-                experiencing personal or family difficulties. Our
-                counseling services are provided by qualified and
-                experienced professionals who are sensitive to the
-                unique needs of the Muslim community.</p>
+              <p className='services-description'><b>We belong to Allah and to Allah we shall return.</b> 
+              We provide support and assistance in arranging funeral services for departed loved ones. <b>Please call the Masjid to arrange Funeral</b></p>
             </div>
           </div>
         </div>

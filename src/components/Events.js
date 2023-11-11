@@ -21,7 +21,7 @@ const Events = () => {
   useEffect(() => {
     const intervalId = setInterval(updateCurrentDate, 60000);
     return () => clearInterval(intervalId);
-  },);
+  });
 
   const generateFridays = (year, month) => {
     const dates = [];
@@ -44,7 +44,7 @@ const Events = () => {
     {
       date: "2023-10-6",
       title: "Jummah Prayer",
-      description: "Prayer at 2pm", 
+      description: "Prayer at 2pm",
     },
     {
       date: "2023-10-15",
@@ -129,15 +129,15 @@ const Events = () => {
                 {day}
               </div>
             ))}
-            {Array.from({ length: 31 }, (_, index) => index + 1).map((day) => (
+            {Array.from({ length: 31 + new Date(currentDate.getFullYear(), currentDate.getMonth(), 1).getDay() }, (_, index) => index + 1 - new Date(currentDate.getFullYear(), currentDate.getMonth(), 1).getDay()).map((day) => (
               <div
                 key={day}
                 className={`calendar-cell ${
-                  day === parseInt(selectedDate.split("-")[2]) ? "selected" : ""
+                  day <= 0 ? "empty" : day === parseInt(selectedDate.split("-")[2]) ? "selected" : ""
                 }`}
                 onClick={() => handleDayClick(currentDate.getFullYear(), currentDate.getMonth() + 1, day)}
               >
-                {day}
+                {day > 0 ? day : ""}
               </div>
             ))}
           </div>
@@ -153,20 +153,24 @@ const Events = () => {
                   <div key={event.title}>
                     {index === 0 && ( 
                       <div className="event-item">
-                        <h3>{formatDay(parseInt(selectedDate.split("-")[2]))}</h3>
+                        <h3 className="selected-date-box">
+                          {formatDay(parseInt(selectedDate.split("-")[2]))}
+                        </h3>
                         <hr /> 
                       </div>
                     )}
                     <div className="event-item">
                       <h4>{event.title}</h4>
-                      <p>{event.description}</p>
+                      <h5>{event.description}</h5>
                     </div>
                     {index < filteredEvents.length - 1 && <hr />} 
                   </div>
                 ))}
               {eventsData.filter((event) => event.date === selectedDate).length === 0 && (
                 <div className="event-item">
-                  <h3>{formatDay(parseInt(selectedDate.split("-")[2]))}</h3>
+                  <h3 className="selected-date-box">
+                    {formatDay(parseInt(selectedDate.split("-")[2]))}
+                  </h3>
                 </div>
               )}
             </div>
