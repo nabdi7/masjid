@@ -17,7 +17,7 @@ const Donate = () => {
             <div className='donate-container'>
                 <p className="quote">"Whoever builds a masjid for the sake of Allah, 
                     Allah will build for him a house like it in paradise". 
-                    (Sahih al-Bukhari 450)
+                    <div className="hadith-verse"><b>(Sahih al-Bukhari 450)</b></div>
                 </p>
             </div>
 

@@ -75,12 +75,60 @@ body {
     height: auto;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .donate {
         margin: 1rem;
     }
 
+    .quote {
+        font-family: "Montserrat";
+        font-size: 18px;
+        margin-bottom: 2rem;
+        padding: 0.5rem;
+    }
+
+    .hadith-verse {
+        font-family: "Montserrat";
+        font-size: 15px;
+        text-align: center;
+        margin-top: 10px;
+    }
     .donate-scan {
         grid-template-columns: repeat(1, 1fr);
+    }
+    .qr-container {
+        width: 105%;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1368px) {
+    .donate {
+        margin: 1rem;
+    }
+
+    .quote {
+        font-family: "Montserrat";
+        font-size: 22px;
+        margin-bottom: 2rem;
+        padding: 0.5rem;
+    }
+
+    .hadith-verse {
+        font-family: "Montserrat";
+        font-size: 18px;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .donate-scan {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .qr-container {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 1rem;
     }
 }

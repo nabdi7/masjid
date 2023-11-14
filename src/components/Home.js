@@ -12,7 +12,7 @@ import backCover from '../images/pic1.jpg';
 const Home = () => {
     const navigate = useNavigate();
 
-    const scrollToAbout = (event) => {
+    const scrollToAbout = (event) => { 
         event.preventDefault();
         navigate('/about');
         window.scrollTo(0, 0);

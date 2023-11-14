@@ -19,9 +19,18 @@
   
 .prayer p {
   font-family: "Montserrat";
-  font-size: 15px;
+  font-size: 20px;
   color: #000;
   margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+.quran-verse {
+  font-family: "Montserrat";
+  font-size: 18px;
+  text-align: center;
+  margin-top: 10px;
+  color: #000;
 }
 
 .friday-prayer {
@@ -69,14 +78,26 @@
     max-width: 100%;
     max-height: auto;
     margin: 10px 0;
-    padding: 20px;
+    padding: 10px;
   }
   
   .prayer p {
-    font-size: 15px;
+    font-size: 18px;
     margin-bottom: 2rem;
+    padding: 0.5rem;
   }
-  
+  .quran-verse {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 10px;
+  }
+ 
+  .friday-title {
+    font-size: 15px;
+  }
+  .prayer-subtitle {
+    font-size: 15px;
+  }
   .prayer-widget {
     padding: 20px;
   }

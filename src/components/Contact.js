@@ -74,7 +74,7 @@ const Contact = () => {
             <div className='whatsapp'>
               <p className='whatsapp-title'> Join our WhatsApp </p>
               <img src={whatsApp} alt="Masjid" className='whatsapp-code' />
-              <div className='socials'>
+              <div className='socials-box'>
                 <a href="https://www.instagram.com/qd_designs/" target="_blank" rel="noopener noreferrer"><BsInstagram /></a>
                 <a href="https://www.facebook.com/people/Quality-Designs/61550453621801/?mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a>
                 <a href="https://twitter.com/Qd_designs/" target="_blank" rel="noopener noreferrer"><BsTwitter /></a>
@@ -83,7 +83,7 @@ const Contact = () => {
           </div>
           <div className='contact-right'>
             <div className='contact-form'>
-              <h3>Get In Touch</h3>
+              <h3 class='box-title'>Get In Touch</h3>
               <form ref={formRef} onSubmit={sendEmail}>
                 <input
                   type='text'

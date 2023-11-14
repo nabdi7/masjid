@@ -207,12 +207,12 @@ textarea {
     border: none;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .contact-container {
         flex-direction: column;
         align-items: center;
     }
-
+    
     .contact-left,
     .contact-right {
         flex-basis: 100%;
@@ -235,7 +235,97 @@ textarea {
         margin-left: 10px;
     }
     
-    .social-icons {
+    .socials-box {
+        margin-top: 1rem;
         margin-bottom: 1rem;
+    }
+    .socials-box a {
+        font-size: 19px !important;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1368px) {
+    .contact-information {
+        font-size: 26px;
+    }
+    .whatsapp-title{
+        font-size: 26px;
+        text-align: center;
+        margin-bottom: 15px;
+        position: relative; 
+    }
+    .whatsapp-code {
+        width: 35%;
+        height: auto; 
+    }
+    .contact-icons {
+        font-size: 40px;
+        margin-bottom: 10px;
+        background-color: #ffffff;
+        border-radius: 50%;
+        padding: 10px;
+        color: #038000;
+    }
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-left,
+    .contact-right {
+        flex-basis: 100%;
+        margin-right: 0;
+    }
+
+    .contact-left {
+        width: 70%;
+    }
+    .contact-right {
+        width: 70%;
+    }
+    .contact-form {
+        margin-top: 3rem;
+        flex-basis: 100%;
+        padding: 95px;
+    }
+    .contact-form h3 {
+        font-size: 28px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+      
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+      
+    input[type='text'],
+    input[type='email'],
+    input[type='tel'],
+    textarea {
+        padding: 25px;
+        margin-bottom: 20px;
+        font-size: 15px;
+    }
+    
+    .whatsapp-image {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 1rem; 
+    }
+    
+    .contact-right {
+        align-items: center;
+        margin-left: 10px;
+    }
+    
+    .socials-box {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+    .socials-box a {
+        font-size: 25px !important;
+        margin-right: 10px;
     }
 }

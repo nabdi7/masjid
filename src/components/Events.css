@@ -161,17 +161,20 @@ li {
   margin-bottom: 10px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 667px) {
   .calendar-and-events-container {
     flex-direction: column;
     padding: 1rem; 
-    margin-left: 1rem; 
-    margin-right: 1rem;
   }
 
   .calendar {
     max-width: 100%; 
     margin: 0; 
+  }
+
+  .calendar-cell {
+    padding: 9px; 
+    font-size: 13px; 
   }
 
   .selected-day-events {
@@ -181,7 +184,33 @@ li {
 
   .class-time {
     padding: 1rem; 
-    margin-left: 2rem; 
-    margin-right: 2rem;
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1180px) {
+  .calendar-and-events-container {
+    flex-direction: column;
+    padding: 1rem; 
+  }
+
+  .calendar {
+    max-width: 100%; 
+    margin: 0; 
+  }
+
+  .calendar-cell {
+    padding: 15px; 
+    font-size: 23px; 
+  }
+
+  .selected-day-events {
+    max-width: 100%;
+    margin: 0; 
+  }
+
+  .class-time {
+    padding: 25px; 
+    width: 100%;
   }
 }

@@ -20,8 +20,10 @@ const Prayer = () => {
         <div className='prayer-image'>
           <img src={img1} alt="prayer" />
         </div>
-        <p>"Indeed, performing prayers is a duty on the believers at 
-          the appointed times" (Qur'an 4, Verse 103)</p>
+        <p>
+          "Indeed, performing prayers is a duty on the believers at the appointed times"{" "}
+          <div className="quran-verse"><b>(Qur'an 4, Verse 103)</b></div>
+        </p>
       </section>
 
       {/* Friday Prayer Times */}

@@ -141,7 +141,7 @@ body {
     .about-text {
         order: 1;
     }
-
+    
     .board-title::after {
         bottom: -10px; 
     }
@@ -153,6 +153,6 @@ body {
     }
 
     .board-member {
-        width: 100%; 
+        width: 90%; 
     }
 }
