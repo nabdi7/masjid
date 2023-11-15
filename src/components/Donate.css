@@ -27,6 +27,13 @@ body {
     margin-bottom: 1rem;
 }
 
+.hadith-verse {
+    font-family: "Montserrat";
+    font-size: 15px;
+    text-align: center;
+    margin-top: 10px;
+}
+
 .donate-scan {
     max-width: 100%;
     display: grid; 

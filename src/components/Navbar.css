@@ -35,7 +35,7 @@ body {
 
 .navbar-links ul {
   margin: 0;
-  width: 100%;
+  /* width: 100%; */
   padding: 0;
   display: flex;
   text-align: center;
@@ -71,6 +71,7 @@ body {
   display: inline-block;
   padding: 1rem;
   color: #000;
+  font-weight: 600;
   text-decoration: none;
 }
 

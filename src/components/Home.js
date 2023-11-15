@@ -141,8 +141,8 @@ const Home = () => {
             <div className='masjid-everyone-container'>
                 <div className='masjid-everyone-box'>
                     <h1 className='masjid-everyone-title'>A MASJID FOR EVERYONE</h1>
-                    <p className='masjid-everyone-description'>A welcoming and 
-                    inclusive masjid for everyone, fostering community through volunteering.</p>
+                    <h4 className='masjid-everyone-description'>A welcoming and 
+                    inclusive masjid for everyone, fostering community through volunteering.</h4>
                     <Link to="/contact" className='button masjid-everyone-button' onClick={scrollToContact}>Volunteer</Link>
                 </div>
             </div>

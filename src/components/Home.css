@@ -1,3 +1,10 @@
+:root {
+    /* --primary-color: #038000;
+    --secondary-colot: black; */
+
+    --primary-color: #000106;
+    --secondary-color: #fff;
+}
 .background-image {
     background-size: cover;
     background-repeat: no-repeat;
@@ -38,11 +45,13 @@
     text-decoration: none;
     justify-content: center;
     font-family: "Montserrat";
+    font-weight: 600;
 }
-
+ 
 .background-image .button.home-button {
     background-color: #038000;
     color: white;
+    font-weight: 600;
 }
   
 .background-image .button.home-button:hover {
@@ -148,6 +157,7 @@
     margin-bottom: 3.5rem; 
     position: relative; 
     display: inline-block; 
+    margin-top: 2rem;
 }
 
 .gallery-title::after {
@@ -205,6 +215,7 @@
     font-size: 20px;
     margin-top: 1rem;
     margin-bottom: 2rem;
+    /* color: var(--secondary-color) */
 }
 
 .masjid-everyone-button {
@@ -255,7 +266,7 @@
     }
     .home-services-box {
         /* width: 100%; */
-        padding: 3rem; 
+        padding: 2rem; 
     }
     .button.learn-more {
         font-size: 13px; 

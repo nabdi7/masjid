@@ -137,6 +137,14 @@ div {
     height: auto;
     
 }
+.socials-box {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.socials-box a {
+    font-size: 19px !important;
+    margin-right: 10px;
+}
 .contact-right {
     flex-basis: calc(35% - 20px); 
     margin-left: 40px; 

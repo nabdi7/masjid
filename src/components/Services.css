@@ -69,6 +69,7 @@ body {
     font-size: 22px;
     margin-bottom: 1rem;
     flex: 1;
+    /* font-weight: 600; */
 }
 .service-button {
     margin-top: 1rem;
@@ -86,6 +87,7 @@ body {
 .service-button.register:hover {
     background-color: #038000;
     color: white;
+    font-weight: 600;
 }
 /* contact section */
 .contacted-sections {
