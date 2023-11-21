@@ -129,7 +129,7 @@ const Services = () => {
                 <FaPhone />
               </div>
               <div className='contacted-info'>
-                <a href='tel:+12068833462'>+1 206 883 3462</a>
+                <a href='tel:+12068833462'>+1 253 635 2310</a>
               </div>
             </div>
           </div>
