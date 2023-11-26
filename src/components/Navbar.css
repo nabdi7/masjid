@@ -74,7 +74,11 @@ body {
   font-weight: 600;
   text-decoration: none;
 }
-
+.dropdown-icon {
+  position: relative;
+  top: 2px; 
+  color: #333;
+}
 .more-dropdown {
   position: relative;
   z-index: 2;
@@ -139,6 +143,11 @@ li a.active {
     .navbar-links li {
       padding: 1rem;
       display: block;
+    }
+    .dropdown-icon {
+      position: relative;
+      top: 3px; 
+      color: #333;
     }
     .more-dropdown  {
       position: relative;

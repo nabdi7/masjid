@@ -71,7 +71,9 @@ body {
     flex: 1;
     /* font-weight: 600; */
 }
+
 .service-button {
+    margin-bottom: 2rem;
     margin-top: 1rem;
     padding: 0.5rem 1rem;
     border: 1px solid #038000;

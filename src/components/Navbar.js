@@ -4,16 +4,23 @@ import "./Navbar.css";
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { IoMdArrowDropdown } from "react-icons/io";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMoreDropdownOpen, setIsMoreDropdownOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const toggleMoreDropdown = () => {
+    setIsMoreDropdownOpen(!isMoreDropdownOpen);
+  };
+
   const closeMenu = () => {
     setIsMenuOpen(false);
+    setIsMoreDropdownOpen(false);
   };
 
   return (
@@ -29,12 +36,12 @@ const Navbar = () => {
             <FontAwesomeIcon icon={faTimes} />
           </div>
           <ul>
-            <li><Link to="/about" onClick={closeMenu}>About Us</Link></li>
+            <li><Link to="/about" onClick={closeMenu}>About </Link></li>
             <li><Link to="/services" onClick={closeMenu}>Programs</Link></li>
             <li><Link to="/events" onClick={closeMenu}>Events</Link></li>
             <li>
-              <Link to="#" onClick={closeMenu}>More</Link>
-              <ul className='more-dropdown'>
+              <Link to="#"  onClick={toggleMoreDropdown}>More <IoMdArrowDropdown className="dropdown-icon" /></Link>
+              <ul className={`more-dropdown ${isMoreDropdownOpen ? 'open' : ''}`}>
                 <li><Link to="/prayer" onClick={closeMenu}>Prayer Times</Link></li>
                 <li><Link to="/contact" onClick={closeMenu}>Contact Us</Link></li>
               </ul>

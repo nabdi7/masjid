@@ -8,7 +8,7 @@
 .background-image {
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 60vh;
+    min-height: 70vh;
     background-position: right center; 
     display: flex;
     flex-direction: column;
@@ -17,6 +17,7 @@
     text-align: center;
     color: white;
     transition: background-image 0.5s ease-in-out, background-position 5s linear; /* Add a transition for smoother image changes */
+    /* background-attachment: fixed; */
 }
 
 .title{
