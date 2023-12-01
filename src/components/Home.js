@@ -64,7 +64,7 @@ const Home = () => {
             className='background-image'
                 style={{
                     backgroundImage: `url(${imageInfo[currentImageIndex].image})`,
-                    backgroundPosition: 'right center', 
+                    
                 }}>
             <h1 className='title'>
                 {imageInfo[currentImageIndex].title}
