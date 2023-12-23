@@ -87,12 +87,12 @@ body {
   
 .board-member {
     margin: 10px;
-    width: 300px;
+    width: 350px;
 }
   
 .board-member__image img {
     max-width: 100%;
-    max-height: 260px;
+    max-height: auto;
     margin-bottom: 5px;
 }
   

@@ -72,6 +72,9 @@ const Home = () => {
             <h1 className='subheading'>{imageInfo[currentImageIndex].subheading}</h1>
             <Link to="/about" className='button home-button' onClick={scrollToAbout}>Learn More</Link>
         </div>
+        
+        {/* announcement */}
+
 
         {/* services */}
         <section className='home-services'>

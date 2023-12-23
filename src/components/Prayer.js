@@ -29,8 +29,8 @@ const Prayer = () => {
       {/* Friday Prayer Times */}
       <div className='friday-prayer'>
         <h1 className='friday-title'>Friday Prayer:</h1>
-        <h5 className='prayer-subtitle'>1st Jummah: {prayerTimes.firstJummah}</h5>
-        <h5 className='prayer-subtitle'>2nd Jummah: {prayerTimes.secondJummah}</h5>
+        <h5 className='prayer-subtitle'>1<sup>st</sup> Jummah: {prayerTimes.firstJummah}</h5>
+        <h5 className='prayer-subtitle'>2<sup>nd</sup> Jummah: {prayerTimes.secondJummah}</h5>
       </div>
 
       {/* Display the prayer times */}

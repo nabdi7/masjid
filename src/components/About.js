@@ -3,7 +3,8 @@ import "./About.css";
 // import img1 from '../images/front.jpeg';
 import img1 from '../images/front.jpeg';
 import img2 from '../images/pic1.jpg';
-import boardImage1 from '../images/board2.jpg'
+import boardImage1 from '../images/abdirahin.JPG'
+import boardImage2 from '../images/board2.jpg'
 
 const About = () => {
     return (
@@ -33,6 +34,8 @@ const About = () => {
             </div>
         </section>
 
+        {/* vission and mission statement */}
+
         <section className="board">
             <h2 className='board-title'>Board Members</h2>
             <div className="board-members">
@@ -41,11 +44,11 @@ const About = () => {
                         <img src={boardImage1} alt="Founder" />
                     </div>
                     <div className="board-member__body">
-                        <h3 className="board-member__title">Sheikh Ahmed Nuur</h3>
-                        <p className="board-member__subtitle">President</p>
+                        <h3 className="board-member__title">Sheikh Abdirahin Al Badri</h3>
+                        <p className="board-member__subtitle">Director</p>
                     </div>
                 </div>
-                <div className="board-member">
+                {/* <div className="board-member">
                     <div className="board-member__image">
                         <img src={boardImage1} alt="Founder" />
                     </div>
@@ -71,7 +74,7 @@ const About = () => {
                         <h3 className="board-member__title">Sheikh Ahmed Nuur</h3>
                         <p className="board-member__subtitle">Treasurer</p>
                     </div>
-                </div>
+                </div> */}
                 {/*
                 <div className="board-member">
                     <div className="board-member__image">

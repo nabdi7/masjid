@@ -3,7 +3,7 @@ import "./Donate.css";
 import { SiCashapp, SiZelle, SiPaypal } from 'react-icons/si';
 import img1 from '../images/qr.png';
 import img2 from '../images/pic1.jpg';
-
+import cashApp from '../images/cashApp.png';
 
 const Donate = () => {
     return (
@@ -31,7 +31,6 @@ const Donate = () => {
                         <h1>Zelle</h1>
                         <img src={img1} alt="zelle" />
                         <p>12345678910</p>
-                        <p>alhuda@masjid.com</p>
                     </div>
                 </div>
                 <div className='qr-container'>
@@ -42,7 +41,6 @@ const Donate = () => {
                         <h1>Paypal</h1>
                         <img src={img1} alt="paypal" />
                         <p>12345678910</p>
-                        <p>alhuda@masjid.com</p>
                     </div>
                 </div>
                 <div className='qr-container'>
@@ -51,9 +49,8 @@ const Donate = () => {
                             <SiCashapp />
                         </div>
                         <h1>CashApp</h1>
-                        <img src={img1} alt="cashapp" />
-                        <p>12345678910</p>
-                        <p>alhuda@masjid.com</p>
+                        <img src={cashApp} alt="cashapp" />
+                        <p>$Alhudamasjid</p>
                     </div>
                 </div>
             </div>
