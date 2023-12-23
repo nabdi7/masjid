@@ -62,8 +62,8 @@ const Footer = () => {
                 <div className='get-in-touch'>
                     <h1 className='menu-title'> Get in touch </h1>
                     <div className='socials'>
-                        <a href="https://www.facebook.com/people/Quality-Designs/61550453621801/?mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer"><BsFacebook /></a>
-                        <a href="https://www.instagram.com/qd_designs/" target="_blank" rel="noopener noreferrer"><BsInstagram /></a>
+                        <a href="" target="_blank" rel="noopener noreferrer"><BsFacebook /></a>
+                        <a href="" target="_blank" rel="noopener noreferrer"><BsInstagram /></a>
                     </div>
                 </div>
                 <div className='line'></div>

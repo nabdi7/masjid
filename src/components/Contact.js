@@ -3,8 +3,9 @@ import emailjs from "emailjs-com";
 import "./Contact.css";
 import img1 from '../images/pic1.jpg';
 import whatsApp from '../images/whatsapp.png';
-import { FaPhone, FaEnvelope, FaFacebookF, FaMapMarkerAlt } from 'react-icons/fa';
-import { BsInstagram, BsTwitter } from 'react-icons/bs';
+import { FaPhone, FaEnvelope, FaFacebookF } from 'react-icons/fa';
+import { BsInstagram } from 'react-icons/bs';
+import { IoLogoYoutube } from "react-icons/io";
 
 const Contact = () => {
   const [formSubmitted, setFormSubmitted] = useState(false);
@@ -57,7 +58,7 @@ const Contact = () => {
                   <FaPhone />
                 </div>
                 <div className='contact-information'>
-                  <a href='tel:+12068833462'>+1 253 635 2310</a>
+                  <a href='tel:+12536352310'>+1 253 635 2310</a>
                 </div>
               </div>
             </div>
@@ -67,7 +68,7 @@ const Contact = () => {
                   <FaEnvelope />
                 </div>
                 <div className='contact-information'>
-                  <a href='mailto:info@qualitydesigns.site' className='email-link'>info@qualitydesigns.site</a>
+                  <a href='mailto:info@alhudamasjid.com' className='email-link'>info@alhudamasjid.com</a>
                 </div>
               </div>
             </div>
@@ -75,9 +76,9 @@ const Contact = () => {
               <p className='whatsapp-title'> Join our WhatsApp </p>
               <img src={whatsApp} alt="Masjid" className='whatsapp-code' />
               <div className='socials-box'>
-                <a href="https://www.instagram.com/qd_designs/" target="_blank" rel="noopener noreferrer"><BsInstagram /></a>
-                <a href="https://www.facebook.com/people/Quality-Designs/61550453621801/?mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a>
-                <a href="https://twitter.com/Qd_designs/" target="_blank" rel="noopener noreferrer"><BsTwitter /></a>
+                <a href="" target="_blank" rel="noopener noreferrer"><BsInstagram /></a>
+                <a href="" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a>
+                <a href="" target="_blank" rel="noopener noreferrer"><IoLogoYoutube /></a>
               </div>
             </div>
           </div>

@@ -139,7 +139,7 @@ const Services = () => {
                 <FaEnvelope />
               </div>
               <div className='contacted-info'>
-                <a href='mailto:info@qualitydesigns.site' className='email-link'>info@alhudamasjid.com</a>
+                <a href='mailto:info@alhudamasjid.com' className='email-link'>info@alhudamasjid.com</a>
               </div>
             </div>
           </div>

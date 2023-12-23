@@ -6,8 +6,8 @@ import img2 from '../images/pic1.jpg';
 const Prayer = () => {
   // Define the prayer times
   const [prayerTimes] = useState({
-    firstJummah: '1:30PM',
-    secondJummah: '2:00PM',
+    firstJummah: '12:15PM',
+    secondJummah: '1:00PM',
   });
   return (
     <>
