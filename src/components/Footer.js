@@ -62,7 +62,7 @@ const Footer = () => {
                 <div className='get-in-touch'>
                     <h1 className='menu-title'> Get in touch </h1>
                     <div className='socials'>
-                        <a href="" target="_blank" rel="noopener noreferrer"><BsFacebook /></a>
+                        <a href="https://www.facebook.com/alhudakent/" target="_blank" rel="noopener noreferrer"><BsFacebook /></a>
                         <a href="" target="_blank" rel="noopener noreferrer"><BsInstagram /></a>
                     </div>
                 </div>

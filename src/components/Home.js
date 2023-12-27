@@ -4,6 +4,7 @@ import "./Home.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBookQuran, faPeopleGroup, faBed, faHeart } from '@fortawesome/free-solid-svg-icons';
 import slideShow1 from '../images/main.jpg';
+import img1 from '../images/interior4.jpeg';
 import img2 from '../images/interior2.jpeg';
 import img3 from '../images/interior1.jpeg';
 import img4 from '../images/interior3.jpeg';
@@ -123,7 +124,7 @@ const Home = () => {
                     <img src={img2} alt="" />
                 </div>
                 <div className='gallery-box'>
-                    <img src={img2} alt="" />
+                    <img src={img1} alt="" />
                 </div>
                 <div className='gallery-box'>
                     <img src={img3} alt="" />

@@ -77,7 +77,7 @@ const Contact = () => {
               <img src={whatsApp} alt="Masjid" className='whatsapp-code' />
               <div className='socials-box'>
                 <a href="" target="_blank" rel="noopener noreferrer"><BsInstagram /></a>
-                <a href="" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a>
+                <a href="https://www.facebook.com/alhudakent/" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a>
                 <a href="" target="_blank" rel="noopener noreferrer"><IoLogoYoutube /></a>
               </div>
             </div>
