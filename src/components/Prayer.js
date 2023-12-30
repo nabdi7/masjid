@@ -45,7 +45,15 @@ const Prayer = () => {
           allowtransparency="true"
           ></iframe>
         </div>
-      </section>
+      </section> 
+
+      {/* Display the prayer times 
+      <section className='muslimpro'>
+        <div className='muslimpro-widget'>
+        <script type="text/javascript" src="http://www.muslimpro.com/muslimprowidget.js?cityid=5368361&language=en&width=150&timeformat=24&headerbackgroundcolor=888888&headertextcolor=000000&textcolor=000000&rowbackgroundcolor1=eeeeee&rowbackgroundcolor2=cccccc" async></script>
+
+        </div>
+      </section> */}
     </>
   );
 }

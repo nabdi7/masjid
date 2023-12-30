@@ -32,7 +32,7 @@ const Events = () => {
         dates.push({
           date: formattedDate,
           title: "Jummah Prayer",
-          description: "Prayer at 1:30pm",
+          description: "Prayer at 12:15pm",
         });
       }
       date.setDate(date.getDate() + 1);
@@ -45,26 +45,6 @@ const Events = () => {
       date: "2023-10-6",
       title: "Jummah Prayer",
       description: "Prayer at 2pm",
-    },
-    {
-      date: "2023-10-15",
-      title: "Stories of the prophets",
-      description: "5pm - 7pm",
-    },
-    {
-      date: "2023-10-20",
-      title: "Quran tafsir",
-      description: "6pm - 8pm",
-    },
-    {
-      date: "2023-10-24",
-      title: "Halaqah",
-      description: "4:30pm - 6:30pm",
-    },
-    {
-      date: "2023-10-24",
-      title: "Quran program",
-      description: "12:30pm - 3:30pm",
     },
     ...generateFridays(2023, currentDate.getMonth() + 1),
   ]);
