@@ -126,15 +126,15 @@ const Home = () => {
                 <div className='gallery-box'>
                     <img src={img1} alt="" />
                 </div>
-                <div className='gallery-box'>
+                {/* <div className='gallery-box'>
                     <img src={img3} alt="" />
-                </div>
+                </div> */}
                 <div className='gallery-box'>
                     <img src={img4} alt="" />
                 </div>
-                <div className='gallery-box'>
+                {/* <div className='gallery-box'>
                     <img src={img2} alt="" />
-                </div>
+                </div> */}
              </div>
         </section>
 

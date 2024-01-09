@@ -30,7 +30,7 @@ const Donate = () => {
                         </div>
                         <h1>Zelle</h1>
                         <img src={img1} alt="zelle" />
-                        <p>12345678910</p>
+                        <p></p>
                     </div>
                 </div>
                 <div className='qr-container'>
@@ -40,7 +40,7 @@ const Donate = () => {
                         </div>
                         <h1>Paypal</h1>
                         <img src={img1} alt="paypal" />
-                        <p>12345678910</p>
+                        <p>coming soon</p>
                     </div>
                 </div>
                 <div className='qr-container'>
